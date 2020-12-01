@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml",
+            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml",
             "map": [
                 {
                     "source": "/Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/res/values-hi/values-hi.xml",

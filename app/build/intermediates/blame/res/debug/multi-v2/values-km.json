@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml",
+            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-km/values-km.xml",
             "map": [
                 {
                     "source": "/Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d0faec7cceaa6eecc62b8981313d64c4/jetified-play-services-base-17.2.1/res/values-km/values.xml",

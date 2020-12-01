@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
 MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/94e6571d583ae21c2c11a19313eff527/navigation-ui-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:2:1-109:12
 MERGED from [com.google.android.material:material:1.3.0-alpha03] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/cd4720fddba0b962fccfcf3cca253917/material-1.3.0-alpha03/AndroidManifest.xml:17:1-24:12
@@ -13,7 +13,7 @@ MERGED from [com.google.android.libraries.places:places:2.4.0] /Users/soyoungpar
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/f509f6d2f9c1ff170092c34a0922c9f9/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/7ced6c91ac482bc6e6ce9aa80fc65495/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/b1af4f2bb3cdb8a270b23f3dd207998b/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/JIMproject/ODsayAndroidSDK/build/.transforms/8cdaa6b2e43e1adc8fdf417e4b7181b8/jetified-ODsayAndroidSDK/AndroidManifest.xml:2:1-13:12
+MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/WPL_android/ODsayAndroidSDK/build/.transforms/7128b1ae2d3d586682966117e6b526ba/jetified-ODsayAndroidSDK/AndroidManifest.xml:2:1-13:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/b9130b8e7aaf8a9eec9647d469bcd89c/jetified-library-1.6.1/AndroidManifest.xml:6:1-15:12
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/be6327719512c19af6e3dfcc948c3a09/appcompat-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/3b6fda2b44e9d68a417a72d9c525ce08/jetified-play-services-maps-17.0.0/AndroidManifest.xml:17:1-38:12
@@ -73,39 +73,39 @@ MERGED from [androidx.print:print:1.0.0] /Users/soyoungpark/.gradle/caches/trans
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/faa46d3172606436a70f4954c4fe88af/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.volley:volley:1.1.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/85bc22d166a9c62aaa86e2c6936bf89a/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e1eab0b7f3b0c05e3b1a620d85730cf8/jetified-transport-api-2.2.0/AndroidManifest.xml:15:1-22:12
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
 	package
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:3:5-34
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:3:5-34
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:1-43:12
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:1-43:12
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:5:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:13:5-67
 MERGED from [com.google.android.libraries.places:places:2.4.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d5e90d770b5794a5374cb91735e870f2/jetified-places-2.4.0/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.libraries.places:places:2.4.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d5e90d770b5794a5374cb91735e870f2/jetified-places-2.4.0/AndroidManifest.xml:11:5-67
-MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/JIMproject/ODsayAndroidSDK/build/.transforms/8cdaa6b2e43e1adc8fdf417e4b7181b8/jetified-ODsayAndroidSDK/AndroidManifest.xml:11:5-67
-MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/JIMproject/ODsayAndroidSDK/build/.transforms/8cdaa6b2e43e1adc8fdf417e4b7181b8/jetified-ODsayAndroidSDK/AndroidManifest.xml:11:5-67
+MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/WPL_android/ODsayAndroidSDK/build/.transforms/7128b1ae2d3d586682966117e6b526ba/jetified-ODsayAndroidSDK/AndroidManifest.xml:11:5-67
+MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/WPL_android/ODsayAndroidSDK/build/.transforms/7128b1ae2d3d586682966117e6b526ba/jetified-ODsayAndroidSDK/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/3b6fda2b44e9d68a417a72d9c525ce08/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/3b6fda2b44e9d68a417a72d9c525ce08/jetified-play-services-maps-17.0.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/1e39e351a1acd43830c6a658390fef70/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/1e39e351a1acd43830c6a658390fef70/jetified-transport-backend-cct-2.3.0/AndroidManifest.xml:26:5-67
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:6:5-79
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:6:5-79
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:12:5-79
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:12:5-79
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/3b6fda2b44e9d68a417a72d9c525ce08/jetified-play-services-maps-17.0.0/AndroidManifest.xml:23:5-79
@@ -115,27 +115,27 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.0] /User
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/9f1f25162a2081c951b0e6aae5fab743/jetified-transport-runtime-2.2.3/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.3] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/9f1f25162a2081c951b0e6aae5fab743/jetified-transport-runtime-2.2.3/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:7:5-79
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:7:5-79
 MERGED from [com.google.android.libraries.places:places:2.4.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d5e90d770b5794a5374cb91735e870f2/jetified-places-2.4.0/AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.libraries.places:places:2.4.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d5e90d770b5794a5374cb91735e870f2/jetified-places-2.4.0/AndroidManifest.xml:9:5-79
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:9:5-81
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:9:22-78
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:10:5-77
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:10:5-77
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:10:22-74
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:10:22-74
 application
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:12:5-41:19
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:12:5-41:19
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:15:5-107:19
 MERGED from [com.google.android.material:material:1.3.0-alpha03] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/cd4720fddba0b962fccfcf3cca253917/material-1.3.0-alpha03/AndroidManifest.xml:22:5-20
@@ -181,73 +181,73 @@ MERGED from [com.android.volley:volley:1.1.1] /Users/soyoungpark/.gradle/caches/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/395caf503a19363977c06465a7c114a5/core-1.3.1/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:15:9-41
 	android:roundIcon
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:17:9-54
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:19:9-40
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:19:9-40
 	android:networkSecurityConfig
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:16:9-69
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:16:9-69
 	android:usesCleartextTraffic
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:20:9-44
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:20:9-44
 activity#com.example.project.PageOfIntro
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:22:9-28:20
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:22:9-28:20
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:22:19-46
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:22:19-46
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:26:27-74
 activity#com.example.project.PageOfSelfDiagnosisResult
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:29:9-63
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:29:9-63
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:29:19-60
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:29:19-60
 activity#com.example.project.ManagerModify
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:30:9-51
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:30:9-51
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:30:19-48
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:30:19-48
 activity#com.example.project.PageOfToManager
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:31:9-53
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:31:9-53
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:31:19-50
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:31:19-50
 activity#com.example.project.ManagerPages
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:32:9-50
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:32:9-50
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:32:19-47
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:32:19-47
 activity#com.example.project.UserPages
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:33:9-47
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:33:9-47
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:33:19-44
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:33:19-44
 service#com.example.project.UserPages
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:35:9-46
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:35:9-46
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:35:18-43
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:35:18-43
 service#com.example.project.RestartService
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:36:9-51
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:36:9-51
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:36:18-48
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:36:18-48
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:38:9-40:71
+ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:38:9-40:71
 	android:value
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:40:13-68
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:40:13-68
 	android:name
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:39:13-58
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:39:13-58
 uses-sdk
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/94e6571d583ae21c2c11a19313eff527/navigation-ui-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/94e6571d583ae21c2c11a19313eff527/navigation-ui-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:8:5-10:41
@@ -266,8 +266,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soyoungpark/.gradl
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/7ced6c91ac482bc6e6ce9aa80fc65495/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/b1af4f2bb3cdb8a270b23f3dd207998b/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/b1af4f2bb3cdb8a270b23f3dd207998b/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/JIMproject/ODsayAndroidSDK/build/.transforms/8cdaa6b2e43e1adc8fdf417e4b7181b8/jetified-ODsayAndroidSDK/AndroidManifest.xml:7:5-9:41
-MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/JIMproject/ODsayAndroidSDK/build/.transforms/8cdaa6b2e43e1adc8fdf417e4b7181b8/jetified-ODsayAndroidSDK/AndroidManifest.xml:7:5-9:41
+MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/WPL_android/ODsayAndroidSDK/build/.transforms/7128b1ae2d3d586682966117e6b526ba/jetified-ODsayAndroidSDK/AndroidManifest.xml:7:5-9:41
+MERGED from [:ODsayAndroidSDK] /Users/soyoungpark/AndroidStudioProjects/WPL_android/ODsayAndroidSDK/build/.transforms/7128b1ae2d3d586682966117e6b526ba/jetified-ODsayAndroidSDK/AndroidManifest.xml:7:5-9:41
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/b9130b8e7aaf8a9eec9647d469bcd89c/jetified-library-1.6.1/AndroidManifest.xml:11:5-13:41
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.6.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/b9130b8e7aaf8a9eec9647d469bcd89c/jetified-library-1.6.1/AndroidManifest.xml:11:5-13:41
 MERGED from [androidx.appcompat:appcompat:1.2.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/be6327719512c19af6e3dfcc948c3a09/appcompat-1.2.0/AndroidManifest.xml:20:5-22:41
@@ -386,16 +386,16 @@ MERGED from [com.android.volley:volley:1.1.1] /Users/soyoungpark/.gradle/caches/
 MERGED from [com.android.volley:volley:1.1.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/85bc22d166a9c62aaa86e2c6936bf89a/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e1eab0b7f3b0c05e3b1a620d85730cf8/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
 MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e1eab0b7f3b0c05e3b1a620d85730cf8/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-		ADDED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 meta-data#com.google.android.gms.version
 ADDED from [com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:16:9-18:69
 MERGED from [com.google.android.gms:play-services-basement:17.2.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/369e4f57d49a1f039feb42386fe35d52/jetified-play-services-basement-17.2.1/AndroidManifest.xml:23:9-25:69

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml",
+            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "/Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d0faec7cceaa6eecc62b8981313d64c4/jetified-play-services-base-17.2.1/res/values-fa/values.xml",

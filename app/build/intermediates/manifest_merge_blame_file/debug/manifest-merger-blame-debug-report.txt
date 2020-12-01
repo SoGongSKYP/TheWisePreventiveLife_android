@@ -6,28 +6,28 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="27"
-8-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+8-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="30" />
-9-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml
+9-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:5:22-64
+11-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:5:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:6:5-79
-12-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:6:22-76
+12-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:6:22-76
 13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:7:5-79
-13-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:7:22-76
+13-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:7:5-79
+13-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:8:5-81
-14-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:8:22-78
+14-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:8:5-81
+14-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-15-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:9:5-81
-15-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:9:22-78
+15-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:9:5-81
+15-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:9:22-78
 16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-16-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:10:5-77
-16-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:10:22-74
+16-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:10:5-77
+16-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:10:22-74
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 17-->[com.google.android.libraries.places:places:2.4.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d5e90d770b5794a5374cb91735e870f2/jetified-places-2.4.0/AndroidManifest.xml:10:5-76
 17-->[com.google.android.libraries.places:places:2.4.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/d5e90d770b5794a5374cb91735e870f2/jetified-places-2.4.0/AndroidManifest.xml:10:22-73
@@ -40,71 +40,71 @@
 21-->[com.google.android.gms:play-services-maps:17.0.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/3b6fda2b44e9d68a417a72d9c525ce08/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
 22
 23    <application
-23-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:12:5-41:19
+23-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:12:5-41:19
 24        android:allowBackup="true"
-24-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:13:9-35
+24-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:13:9-35
 25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 25-->[androidx.core:core:1.3.1] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/395caf503a19363977c06465a7c114a5/core-1.3.1/AndroidManifest.xml:24:18-86
 26        android:debuggable="true"
 27        android:extractNativeLibs="false"
 28        android:icon="@mipmap/ic_launcher"
-28-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:14:9-43
+28-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:14:9-43
 29        android:label="@string/app_name"
-29-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:15:9-41
+29-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:15:9-41
 30        android:networkSecurityConfig="@xml/network_security_config"
-30-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:16:9-69
+30-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:16:9-69
 31        android:roundIcon="@mipmap/ic_launcher_round"
-31-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:17:9-54
+31-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:17:9-54
 32        android:supportsRtl="true"
-32-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:18:9-35
+32-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:18:9-35
 33        android:testOnly="true"
 34        android:theme="@style/AppTheme"
-34-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:19:9-40
+34-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:19:9-40
 35        android:usesCleartextTraffic="true" >
-35-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:20:9-44
+35-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:20:9-44
 36        <activity android:name="com.example.project.PageOfIntro" >
-36-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:22:9-28:20
-36-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:22:19-46
+36-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:22:9-28:20
+36-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:22:19-46
 37            <intent-filter>
-37-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:23:13-27:29
+37-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:23:13-27:29
 38                <action android:name="android.intent.action.MAIN" />
-38-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:24:17-69
-38-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:24:25-66
+38-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:24:17-69
+38-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:24:25-66
 39
 40                <category android:name="android.intent.category.LAUNCHER" />
-40-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:26:17-77
-40-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:26:27-74
+40-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:26:17-77
+40-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:26:27-74
 41            </intent-filter>
 42        </activity>
 43        <activity android:name="com.example.project.PageOfSelfDiagnosisResult" />
-43-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:29:9-63
-43-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:29:19-60
+43-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:29:9-63
+43-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:29:19-60
 44        <activity android:name="com.example.project.ManagerModify" />
-44-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:30:9-51
-44-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:30:19-48
+44-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:30:9-51
+44-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:30:19-48
 45        <activity android:name="com.example.project.PageOfToManager" />
-45-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:31:9-53
-45-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:31:19-50
+45-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:31:9-53
+45-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:31:19-50
 46        <activity android:name="com.example.project.ManagerPages" />
-46-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:32:9-50
-46-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:32:19-47
+46-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:32:9-50
+46-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:32:19-47
 47        <activity android:name="com.example.project.UserPages" />
-47-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:33:9-47
-47-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:33:19-44
+47-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:33:9-47
+47-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:33:19-44
 48
 49        <service android:name="com.example.project.UserPages" />
-49-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:35:9-46
-49-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:35:18-43
+49-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:35:9-46
+49-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:35:18-43
 50        <service android:name="com.example.project.RestartService" />
-50-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:36:9-51
-50-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:36:18-48
+50-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:36:9-51
+50-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:36:18-48
 51
 52        <meta-data
-52-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:38:9-40:71
+52-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:38:9-40:71
 53            android:name="com.google.android.geo.API_KEY"
-53-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:39:13-58
+53-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:39:13-58
 54            android:value="AIzaSyClU3_hw0XUV2WbzG24hhZ91iKXB1SwCGI" />
-54-->/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/AndroidManifest.xml:40:13-68
+54-->/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/AndroidManifest.xml:40:13-68
 55        <meta-data
 55-->[com.firebaseui:firebase-ui-auth:6.1.0] /Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/e93afb8ff8dbd0cc428b7b678ca78c84/jetified-firebase-ui-auth-6.1.0/AndroidManifest.xml:16:9-18:69
 56            android:name="com.google.android.gms.version"

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
+            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
             "map": [
                 {
                     "source": "/Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/369e4f57d49a1f039feb42386fe35d52/jetified-play-services-basement-17.2.1/res/values-sq/values.xml",

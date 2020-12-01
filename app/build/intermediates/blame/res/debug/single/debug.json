@@ -1,446 +1,446 @@
 [
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_button_outline_design.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/button_outline_design.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_outline_local_hospital_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_outline_local_hospital_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_user_danger_search.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_user_danger_search.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_baseline_edit_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_baseline_edit_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_result_box_red.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/result_box_red.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_manager_info.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_manager_info.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/menu_user_bottom_navigation.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/menu/user_bottom_navigation.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_search_result.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/row_search_result.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_dialog_search_place.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/dialog_search_place.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_activity_manager_modify.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/activity_manager_modify.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_2.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_2.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_dialog_patient_visit.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/dialog_patient_visit.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_row_selfdiagnosis_footer.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/row_selfdiagnosis_footer.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_run.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/run.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_3.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_3.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_danger_box.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/danger_box.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_coronavirus.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/coronavirus.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_bookmark.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/bookmark.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_activity_manager_pages.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/activity_manager_pages.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_row_round_white.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/row_round_white.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_button_full_grey.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/button_full_grey.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_double_arrow.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/double_arrow.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_outline_list_alt_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_outline_list_alt_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_circle_green_trans.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/circle_green_trans.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_8.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_8.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_result_box_yellow.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/result_box_yellow.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_result_box_yellow.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/result_box_yellow.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_subway.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/subway.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_result_box_green.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/result_box_green.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_danger_box.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/danger_box.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_patient_visit.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/row_patient_visit.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_col_in_row_result.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/col_in_row_result.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_user_danger.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_user_danger.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_dialog_patient_visit.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/dialog_patient_visit.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_hospital1.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/hospital1.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_search_button_design.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/search_button_design.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_circle_green.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/circle_green.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_launcher_background.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_user_diagnosis_result.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_user_diagnosis_result.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_user_selfdiagnosis.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_user_selfdiagnosis.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_manager_pages.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_manager_pages.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_row_patient_visit.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/row_patient_visit.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_1.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_1.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_route_result_row.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/route_result_row.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_baseline_bar_chart_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_baseline_bar_chart_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/xml/network_security_config.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_dialog_box.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/dialog_box.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_search_button_design.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/search_button_design.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_bookmark.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/bookmark.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_result_box_green.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/result_box_green.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_round_add_circle_outline_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_round_add_circle_outline_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_activity_user_danger_search.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/activity_user_danger_search.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_result_box_red.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/result_box_red.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_bottom_navigation_colors.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/bottom_navigation_colors.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_round_warning_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_round_warning_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_virus2.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/virus2.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_route_result_design.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/route_result_design.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/menu_user_bottom_navigation.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/menu/user_bottom_navigation.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_myicon1.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/myicon1.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_main_notice_design.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/main_notice_design.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_4.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_4.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_search.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/search.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_outline_list_alt_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_outline_list_alt_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/menu_manager_bottom_navigation.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/menu/manager_bottom_navigation.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_1.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_1.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_3.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_3.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_baseline_insert_chart_outlined_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_baseline_insert_chart_outlined_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_round_check_circle_outline_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_round_check_circle_outline_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_dialog_manager_login.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/dialog_manager_login.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_button_full_green.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/button_full_green.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_next.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/next.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_next.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/next.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_korea.jpg.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable-xxxhdpi/korea.jpg"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_user_statistics.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_user_statistics.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_user_selfdiagnosis.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_user_selfdiagnosis.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_route_result_design.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/route_result_design.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_activity_user_diagnosis_result.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/activity_user_diagnosis_result.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_manager_modify.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_manager_modify.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_outline_person_outline_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_outline_person_outline_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/font_font.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/font/font.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_bottom_navigation_colors.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/bottom_navigation_colors.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_button_full_blue.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/button_full_blue.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_round_navigate_next_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_round_navigate_next_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_activity_intro.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/activity_intro.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_button_full_design.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/button_full_design.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/menu_manager_bottom_navigation.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/menu/manager_bottom_navigation.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_button_outline_design.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/button_outline_design.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_danger_light_design.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/danger_light_design.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_circle_yellow.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/circle_yellow.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_cancel.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/cancel.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_route_result_row.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/route_result_row.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_dialog_search_place.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/dialog_search_place.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_odsay_bi_mark.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/odsay_bi_mark.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_row_route_result.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/row_route_result.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_manager_list.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/row_manager_list.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_6.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_6.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_manager_info.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_manager_info.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_bus.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/bus.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_danger_light_design.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/danger_light_design.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_button_full_design.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/button_full_design.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_button_full_blue.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/button_full_blue.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_round_add_circle_outline_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_round_add_circle_outline_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_activity_user_pages.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/activity_user_pages.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_statistics_mark.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/statistics_mark.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_virus1.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/virus1.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_button_full_grey.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/button_full_grey.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_circle_red.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/circle_red.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_round_local_hospital_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_round_local_hospital_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_coronavirus.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/coronavirus.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_6.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_6.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_intro.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_intro.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_hospital1.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/hospital1.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_5.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_5.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_circle_yellow.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/circle_yellow.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_bell.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/bell.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_outline_local_hospital_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_outline_local_hospital_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_circle_red.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/circle_red.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_delete.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/delete.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_circle_red_trans.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/circle_red_trans.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_dialog_manager_login.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/dialog_manager_login.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_main_notice_design.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/main_notice_design.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/font_jalpullineun_oneul.ttf.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/font/jalpullineun_oneul.ttf"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_search.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/search.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_outline_location_on_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_outline_location_on_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_bell.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/bell.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_virus2.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/virus2.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_selfdiagnosis_question.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/row_selfdiagnosis_question.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_activity_to_manager.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/activity_to_manager.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_4.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_4.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_virus3.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/virus3.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_virus3.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/virus3.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_outline_location_on_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_outline_location_on_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_outline_person_outline_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_outline_person_outline_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_delete.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/delete.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_round_warning_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_round_warning_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_user_danger.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_user_danger.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_col_pin.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/col_pin.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_row_round_white.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/row_round_white.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_selfdiagnosis_footer.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/row_selfdiagnosis_footer.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_statistics_mark.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/statistics_mark.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_delete_red.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/delete_red.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_user_home.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_user_home.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_bar_chart_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_baseline_bar_chart_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/xml/network_security_config.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_save.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/save.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/font_jalpullineun_oneul.ttf.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/font/jalpullineun_oneul.ttf"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_person_7.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/person_7.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_7.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_7.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_double_arrow.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/double_arrow.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_circle_green.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/circle_green.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_circle_green_trans.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/circle_green_trans.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_circle_yellow_trans.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/circle_yellow_trans.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_col_pin.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/col_pin.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_user_pages.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_user_pages.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_round_local_hospital_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_round_local_hospital_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_bus.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/bus.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_row_search_result.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/row_search_result.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_myicon1.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/myicon1.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_user_clinics.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_user_clinics.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_col_in_row_result.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/col_in_row_result.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_circle_yellow_trans.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/circle_yellow_trans.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/font_font.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/font/font.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_subway.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/subway.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_save.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/save.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_edit_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_baseline_edit_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_odsay_bi_mark.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/odsay_bi_mark.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_user_statistics.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_user_statistics.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_round_check_circle_outline_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_round_check_circle_outline_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_circle_red_trans.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/circle_red_trans.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_8.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_8.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_delete_red.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/delete_red.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_button_full_green.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/button_full_green.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_edittext_outline_design.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/edittext_outline_design.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_button_outline_grey.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/button_outline_grey.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_5.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_5.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_to_manager.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_to_manager.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_run.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/run.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_route_result.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/row_route_result.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_manager_list.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_manager_list.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_user_home.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_user_home.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_fragment_manager_add.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/fragment_manager_add.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_dialog_box.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/dialog_box.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_manager_add.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_manager_add.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_button_outline_grey.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/button_outline_grey.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_virus1.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/virus1.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_ic_round_navigate_next_24.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/ic_round_navigate_next_24.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_manager_list.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_manager_list.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_row_selfdiagnosis_question.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/row_selfdiagnosis_question.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_ic_baseline_insert_chart_outlined_24.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/ic_baseline_insert_chart_outlined_24.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/layout_row_manager_list.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/layout/row_manager_list.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_cancel.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/cancel.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_korea.jpg.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable-xxxhdpi/korea.jpg"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_user_clinics.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_user_clinics.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/res/merged/debug/drawable_person_2.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/src/main/res/drawable/person_2.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_edittext_outline_design.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/edittext_outline_design.xml"
     }
 ]

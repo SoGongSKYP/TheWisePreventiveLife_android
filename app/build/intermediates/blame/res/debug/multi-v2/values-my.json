@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/JIMproject/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
+            "outputFile": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-my/values-my.xml",
             "map": [
                 {
                     "source": "/Users/soyoungpark/.gradle/caches/transforms-2/files-2.1/94e6571d583ae21c2c11a19313eff527/navigation-ui-2.3.1/res/values-my/values-my.xml",

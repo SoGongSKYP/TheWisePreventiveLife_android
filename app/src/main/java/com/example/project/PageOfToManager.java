@@ -91,7 +91,7 @@ public class PageOfToManager extends AppCompatActivity {
         //----------------------------------------------------------------------
         client = new OkHttpClient().newBuilder().build();
         mediaType = MediaType.parse("text/plain");
-        OkhttpUrl="http://192.168.1.196:8080/WLP_re/androidDB.jsp";
+        OkhttpUrl="http://3.35.210.3:8080/WLP_re/androidDB.jsp";
         //----------------------------------------------------------------------
     }
 
