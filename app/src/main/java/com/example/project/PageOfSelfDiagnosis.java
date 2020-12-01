@@ -49,15 +49,4 @@ public class PageOfSelfDiagnosis extends Fragment {
         QuestionSentencesArray.add("최근 14일 이내에 확진자, 접촉자와 만난 적이 있었나요?");
         QuestionSentencesArray.add("최근 14일 이내에 해외 여행을 다녀오셨거나, 다녀온 주변인을 만난 적이 있었나요?");
     }
-
-    public void self_diagnose() {
-        // TODO implement here
-    }
-
-    public void calculate_result() {
-        // TODO implement here
-    }
-
-
-
 }
