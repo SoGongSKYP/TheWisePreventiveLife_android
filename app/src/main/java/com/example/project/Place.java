@@ -1,6 +1,5 @@
 package com.example.project;
 import java.io.Serializable;
-import java.util.*;
 
 /**
  * 장소 관련 정보 저장 class
