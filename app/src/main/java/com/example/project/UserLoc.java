@@ -1,9 +1,5 @@
 package com.example.project;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -16,28 +12,11 @@ import androidx.core.content.ContextCompat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.maps.CameraUpdateFactory;
-import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-
-import java.io.IOException;
-import java.net.URL;
-import java.net.URLEncoder;
-
-
-
 public class UserLoc extends AppCompatActivity {
     /**
      * Default constructor
      */
-    //private final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 200;
+
     private static Place userPlace = new Place("동국대학교 정보문화관", 37.559562, 126.998557);
     private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
     private static final long MIN_TIME_BW_UPDATES = 1000 * 10 * 1;
@@ -59,7 +38,6 @@ public class UserLoc extends AppCompatActivity {
     }
 
     public static void LocBy_gps(Context context, LocationListener gpsListener) {
-        //PageOfMain.GPSListener gpsListener = new PageOfMain.GPSListener();
         try {
             LocationManager locationManager = (LocationManager) context.getSystemService(LOCATION_SERVICE);
             boolean isGPSEnabled = locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER);

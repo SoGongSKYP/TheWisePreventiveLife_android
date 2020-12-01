@@ -1,19 +1,15 @@
 package com.example.project;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class AdapterOfList extends RecyclerView.Adapter<AdapterOfList.ListViewHolder>{

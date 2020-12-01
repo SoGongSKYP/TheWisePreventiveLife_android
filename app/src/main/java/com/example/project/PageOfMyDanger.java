@@ -1,13 +1,10 @@
 package com.example.project;
 
-import android.Manifest;
-import android.content.Context;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.Location;
 import android.location.LocationListener;
-import android.location.LocationManager;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,8 +13,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageButton;
+
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -25,7 +21,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
+
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -39,19 +35,12 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import org.xml.sax.SAXException;
-
-import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-
-import javax.xml.parsers.ParserConfigurationException;
-
-import static android.content.Context.LOCATION_SERVICE;
 
 /**
  *
@@ -62,7 +51,6 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
     Button findRouteButton;
     DialogOfSearch dialog;
     private Place startPlace, finishPlace;  // 검색한 결과 Place 객체
-    //private UserLoc userLoc;
     private ArrayList<Patient> patient;
     private ArrayList<VisitPlace> nearPlaces; // 경로 주변 확진자
     private ArrayList<Place> visitPlaceList; // 출력 결과 경로 경유지
@@ -95,7 +83,6 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
     private TextView resultTextView;
 
     public PageOfMyDanger() throws InterruptedException {
-        //this.userLoc=new UserLoc();
         this.visitPlacePoint = new ArrayList<Marker>();
         this.nearMaker = new ArrayList<Marker>();
         this.patient =new ArrayList<Patient>();
@@ -460,6 +447,4 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
             resultTextView.setText("검색하신 외출 동선의 위험도는 '안전' 입니다.");
         }
     }
-
-
 }

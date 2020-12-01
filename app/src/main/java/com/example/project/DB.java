@@ -8,8 +8,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.net.ProtocolException;
-import java.sql.Connection;
 import java.util.*;
 
 import java.io.BufferedReader;

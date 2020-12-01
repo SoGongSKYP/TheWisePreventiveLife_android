@@ -20,13 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 
-
-import org.xml.sax.SAXException;
-
-import java.io.IOException;
 import java.util.*;
-
-import javax.xml.parsers.ParserConfigurationException;
 
 
 public class PageOfSelectedClinic extends Fragment implements OnMapReadyCallback {

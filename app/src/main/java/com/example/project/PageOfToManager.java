@@ -14,13 +14,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.io.IOException;
-
-import static android.widget.Toast.*;
 
 import okhttp3.Call;
 import okhttp3.Callback;
