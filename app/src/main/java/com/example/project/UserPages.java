@@ -4,29 +4,21 @@ package com.example.project;
         import androidx.appcompat.app.ActionBar;
         import androidx.appcompat.app.AppCompatActivity;
         import androidx.appcompat.widget.Toolbar;
-        import androidx.cardview.widget.CardView;
+
         import androidx.fragment.app.FragmentManager;
         import androidx.fragment.app.FragmentTransaction;
 
-        import android.app.AlarmManager;
-        import android.app.PendingIntent;
-        import android.content.Context;
         import android.content.Intent;
         import android.graphics.Color;
         import android.graphics.drawable.ColorDrawable;
         import android.os.Bundle;
-        import android.os.Parcelable;
         import android.view.MenuItem;
         import android.view.View;
         import android.view.Window;
         import android.view.WindowManager;
-        import android.widget.EditText;
         import android.widget.ImageButton;
-        import android.widget.RelativeLayout;
         import android.widget.TextView;
-        import android.widget.Toast;
 
-        import com.google.android.libraries.places.widget.AutocompleteSupportFragment;
         import com.google.android.material.bottomnavigation.BottomNavigationView;
 
         import org.json.JSONException;
@@ -34,10 +26,6 @@ package com.example.project;
 
         import java.io.IOException;
         import java.text.ParseException;
-        import java.util.ArrayList;
-        import java.util.Calendar;
-        import java.util.concurrent.locks.Lock;
-        import java.util.concurrent.locks.ReentrantLock;
 
         import javax.xml.parsers.ParserConfigurationException;
 
