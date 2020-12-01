@@ -83,11 +83,4 @@ public class NationStatistics extends Statistics {
         return testNum;
     }
 
-    public void make_chart() {
-        // TODO implement here
-    }
-
-    /**
-     * 
-     */
 }
