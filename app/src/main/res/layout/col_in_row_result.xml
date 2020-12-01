@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp">
+            <ImageView
+                android:id="@+id/col_traffic_type_ImageView"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/subway"
+                android:scaleType="fitCenter"/>
+            <TextView
+                android:id="@+id/col_lane_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="7212"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="12dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:id="@+id/col_start_LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/col_start_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="승차정류장승차정류장"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorDarkGrey"/>
+                    <ImageView
+                        android:id="@+id/col_start_ImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/col_pin"
+                        android:layout_gravity="center_horizontal"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/col_next_ImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:src="@drawable/ic_round_navigate_next_24"/>
+
+                <LinearLayout
+                    android:id="@+id/col_finish_LinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="6dp">
+                    <TextView
+                        android:id="@+id/col_finish_TextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="하차정류장하차"
+                        android:textSize="13dp"
+                        android:textColor="@color/colorDarkGrey" />
+                    <ImageView
+                        android:id="@+id/col_finish_ImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/col_pin"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="bottom"
+                        android:scaleType="fitEnd"/>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:id="@+id/col_road_View"
+                android:layout_width="fill_parent"
+                android:layout_height="3dp"
+                android:background="#636363"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

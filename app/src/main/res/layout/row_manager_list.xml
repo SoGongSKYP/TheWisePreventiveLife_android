@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/row_patient_LinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/manager_list_delete_Button"
+        app:layout_constraintBottom_toTopOf="@id/row_bottom_View"
+        android:layout_marginLeft="15dp"
+        android:padding="15dp">
+        <TextView
+            android:id="@+id/patient_num_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확진자 1"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="17dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/patient_date_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020년 11월 02일"
+            android:textSize="15dp"
+            android:textColor="@color/colorDarkGrey"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/manager_list_delete_Button"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        android:background="@null"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/row_bottom_View"
+        app:layout_constraintLeft_toRightOf="@id/row_patient_LinearLayout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+    <View
+        android:id="@+id/row_bottom_View"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        app:layout_constraintTop_toBottomOf="@id/row_patient_LinearLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/colorLightGrey"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

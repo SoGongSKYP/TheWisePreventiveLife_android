@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_box"
+    android:padding="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+
+    <TextView
+        android:id="@+id/dialog_add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dialog_visit_date_EditText"
+        android:textColor="@color/colorDarkGrey"
+        android:textStyle="bold"
+        android:textSize="17dp"
+        android:text="  확진자 방문지"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageButton
+        android:id="@+id/dialog_dismiss_Button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dialog_visit_date_EditText"
+        android:src="@drawable/cancel"
+        android:background="@color/colorWhite"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/dialog_visit_date_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dialog_add_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dialog_search_bar"
+        android:hint="방문 날짜 (YYYY-MM-DD)"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_outline_design"/>
+
+    <RelativeLayout
+        android:id="@+id/dialog_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/dialog_visit_date_EditText"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dialog_visit_select_title"
+        >
+        <EditText
+            android:id="@+id/dialog_search_bar_EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="장소 검색"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorDarkGrey"
+            android:background="@drawable/button_outline_grey"/>
+        <ImageButton
+            android:id="@+id/dialog_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/search"
+            android:background="@null"
+            android:layout_centerInParent="true"
+            android:layout_alignRight="@id/dialog_search_bar_EditText"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/dialog_visit_select_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dialog_search_bar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dialog_visit_select_detail"
+        android:text="장소를 검색하세요"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/dialog_visit_select_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dialog_visit_select_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dialog_visit_RecyclerView"
+        android:text=""
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="13dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_visit_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintTop_toBottomOf="@id/dialog_visit_select_detail"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/dialog_visit_date_EditText"
+        android:background="@drawable/edittext_outline_design"/>
+
+
+
+
+    <Button
+        android:id="@+id/dialog_add_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dialog_visit_RecyclerView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="방문지 정보 추가"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorMainRed"
+        android:background="@drawable/button_outline_design"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

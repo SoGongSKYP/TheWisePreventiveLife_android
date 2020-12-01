@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/manager_Add"
+        android:title="리스트"
+        android:icon="@drawable/ic_outline_list_alt_24"/>
+    <item android:id="@+id/manager_Modify"
+        android:title="정보 추가"
+        android:icon="@drawable/ic_round_add_circle_outline_24"/>
+    <item android:id="@+id/manager_Info"
+        android:title="관리자"
+        android:icon="@drawable/ic_outline_person_outline_24"/>
+</menu>

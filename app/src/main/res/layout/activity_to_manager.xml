@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageOfToManager"
+    android:background="@color/colorLightGrey">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toManager_Toolbar"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/user_info_LinearLayout"
+        android:paddingTop="24dp"
+        android:background="@color/colorWhite">
+        <TextView
+            android:id="@+id/toManager_Title_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorDarkGrey"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/user_info_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/toManager_Toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorWhite"
+        android:padding="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="위치정보 동의"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/user_locOK_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="동의함"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15dp"
+            android:layout_marginBottom="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사용 중인 어플리케이션 버전"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:id="@+id/user_version_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.0.3"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15dp"
+            android:layout_marginBottom="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="사용자 정보"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="일반 사용자"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15dp"
+            android:layout_marginBottom="25dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="관련 문의"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="jun991203@gmail.com"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="15dp"
+            android:layout_marginBottom="120dp"/>
+        <Button
+            android:id="@+id/switch_to_manager_Button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="관리자 로그인"
+            android:textColor="@color/colorMainRed"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_outline_design"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageOfSelfDiagnosisResult"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/diagnosis_result_Toolbar"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="24dp"
+        android:background="@color/colorWhite">
+        <ImageButton
+            android:id="@+id/user_info_ImageButton"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_outline_person_outline_24"
+            android:background="@color/colorWhite"
+            android:scaleType="fitCenter"/>
+        <TextView
+            android:id="@+id/diagnosis_result_Title_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="자가 진단 결과"
+            android:textSize="20dp"
+            android:textColor="@color/colorDarkGrey"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/result_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/result_box_red"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:elevation="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="당신은 "
+                android:textColor="@color/colorDarkGrey"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/result_main_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="감염 고위험자 "
+                android:textColor="@color/colorMainRed"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="입니다."
+                android:textColor="@color/colorDarkGrey"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/result_content_TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아래의 코로나19 증상을 확인하고, 심각한 증상이 있다면 즉시 의료진의 도움을 받아야 합니다. 의료 기관을 방문하기 전에는 항상 미리 연락을 취해야 하며, 외출시 마스크 착용은 필수 입니다. 가급적 실내에서도 마스크를 착용해주시기 바랍니다.
+\n'선별진료소' 탭을 선택하여 가까운 선별진료소를 확인하세요."
+            android:textSize="14dp"
+            android:textColor="@color/colorDarkGrey"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:background="@drawable/row_round_white"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="공통 증상"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDarkGrey"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="발열, 마른 기침, 피로감"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorDarkGrey"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:background="@drawable/row_round_white"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="심각한 증상"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDarkGrey"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="호흡곤란 또는 숨가쁨\n가슴 통증 또는 압박감\n언어 또는 운동장애"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorDarkGrey"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:padding="20dp"
+                android:background="@drawable/row_round_white"
+                android:elevation="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text="드문 증상"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDarkGrey"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="몸살 또는 감기증상, 인후통, 설사, 결막염, 두통\n미각 또는 후각 상실\n피부 발진 또는 손가락, 발가락 변색"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorDarkGrey"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

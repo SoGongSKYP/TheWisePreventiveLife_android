@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/user_Home"
+        android:title="주변확진자"
+        android:icon="@drawable/ic_outline_location_on_24"/>
+    <item android:id="@+id/user_Danger"
+        android:title="위험도"
+        android:icon="@drawable/ic_round_warning_24"/>
+    <item android:id="@+id/user_Statistics"
+        android:title="통계"
+        android:icon="@drawable/ic_baseline_insert_chart_outlined_24"/>
+    <item android:id="@+id/user_SelfDiagnosis"
+        android:title="자가진단"
+        android:icon="@drawable/ic_round_check_circle_outline_24"/>
+    <item android:id="@+id/user_Clinics"
+        android:title="선별진료소"
+        android:icon="@drawable/ic_outline_local_hospital_24"/>
+</menu>
