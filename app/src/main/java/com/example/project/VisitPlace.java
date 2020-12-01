@@ -1,6 +1,6 @@
 package com.example.project;
 import java.io.Serializable;
-import java.util.*;
+
 
 /**
  * 확진자 방문 장소 저장할 class
