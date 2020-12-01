@@ -2,7 +2,6 @@ package com.example.project;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -18,15 +17,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import org.json.JSONException;
-import org.xml.sax.SAXException;
 
-import java.io.IOException;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Objects;
-
-import javax.xml.parsers.ParserConfigurationException;
-
 
 public class DialogOfSearch extends Dialog {
 
@@ -120,9 +113,6 @@ public class DialogOfSearch extends Dialog {
                 }
             }
         });
-
-
-
 
 
         // 확인 버튼
