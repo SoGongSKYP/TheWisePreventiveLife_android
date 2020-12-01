@@ -1,5 +1,4 @@
 package com.example.project;
-import java.util.*;
 
 /**
  * xml 예시
@@ -108,10 +107,5 @@ public class LocalStatistics extends Statistics {
     public int getIncreaseDecrease() {
         return increaseDecrease;
     }
-
-    public void make_chart() {
-        // TODO implement here
-    }
-
 
 }
