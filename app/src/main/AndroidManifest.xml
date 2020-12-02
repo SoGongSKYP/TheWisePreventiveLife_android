@@ -33,7 +33,6 @@
         <activity android:name=".UserPages" />
 
         <service android:name=".UserPages" />
-        <service android:name=".RestartService" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
