@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -27,6 +28,8 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
 import okhttp3.Response;
+
+import static android.widget.Toast.LENGTH_SHORT;
 
 public class PageOfToManager extends AppCompatActivity {
 
@@ -108,57 +111,40 @@ public class PageOfToManager extends AppCompatActivity {
 
                 managerID = managerIDEditText.getText().toString();
                 managerPW = managerPWEditText.getText().toString();
-                //b. Make the request: okhttp3.Request
-                RequestBody body =new FormBody.Builder().add("id",managerID).add("pw",managerPW).add("type","login").build();
-                Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
+                int result= 0;
+                try {
+                    result = DBEntity.login(managerID,managerPW);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
 
-//c. Read the response: okhttp.Callback[1. failure: onFailure 2. success: onResponse]
-                client.newCall(request).enqueue(new Callback() {
-                    @Override
-                    public void onFailure(Call call, IOException e) {
-                        Log.d("연결 실패", "error Connect Server error is"+e.toString());
-                        e.printStackTrace();
-                    }
 
-                    @Override
-                    public void onResponse(Call call, Response response) throws IOException {
-                        if (response.isSuccessful()) {
-                            //final JSONObject jsonObject = new JSONObject(response.body().string());
-                            result =response.body().string();
-                            Boolean b = result.equals("success");
-                            Log.d("진짜 같냐? ", b.toString());
-                            Log.d("젼쥬", result);
-                            // Log.d("response jsp db",response.body().string()+"");
-                            if (result.equals("\n\n\n\n\nsuccess")) {
-                                //makeText(PageOfToManager.this, "로그인", LENGTH_SHORT).show();
-                                Log.d("로그인", result);
+                // Log.d("response jsp db",response.body().string()+"");
+                            if (result==1) {
+                                Toast.makeText(PageOfToManager.this, "로그인", LENGTH_SHORT).show();
+                                //Log.d("로그인", result);
                                 Intent intent = new Intent(getApplicationContext(), ManagerPages.class);
                                 intent.putExtra("managerID", managerID);
                                 intent.putExtra("managerPW", managerPW);
                                 startActivity(intent);
                                 finish();
-                            } else if (result.equals("\n\n\n\n\nfailed")) {
-                                Log.d("아이디/비번이 틀디", result);
-                                //makeText(PageOfToManager.this, "아이디 또는 비밀번호가 틀렸음", LENGTH_SHORT).show();
+                            } else if (result==0) {
+                                //Log.d("아이디/비번이 틀디", result);
+                                Toast.makeText(PageOfToManager.this, "아이디 또는 비밀번호가 틀렸음", LENGTH_SHORT).show();
                                 managerIDEditText.setText("");
                                 managerPWEditText.setText("");
-                            } else if (result.equals("\n\n\n\n\nnoID")) {
-                                Log.d("존재하지 않는 아이디", result);
-                                //Toast.makeText(PageOfToManager.this, "존재하지 않는 아이디", Toast.LENGTH_SHORT).show();
+                            } else if (result==2) {
+                               // Log.d("존재하지 않는 아이디", result);
+                                Toast.makeText(PageOfToManager.this, "존재하지 않는 아이디", LENGTH_SHORT).show();
                                 managerIDEditText.setText("");
                                 managerPWEditText.setText("");
                             }else{
-                                Log.d("서버 오류", result);
-                                //Toast.makeText(PageOfToManager.this, "서버 오류", Toast.LENGTH_SHORT).show();
+                              //  Log.d("서버 오류", result);
+                                Toast.makeText(PageOfToManager.this, "서버 오류", LENGTH_SHORT).show();
                                 managerIDEditText.setText("");
                                 managerPWEditText.setText("");
                             }
                             loginDialog.dismiss();
-                        }
-                    }
-
-                });
-                // int dbtest = new DBEntity().login(managerID, managerPW);//DB함수 호출하기
 
             }
         });

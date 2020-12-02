@@ -8,6 +8,7 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.CountDownLatch;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -25,11 +26,11 @@ public class DBEntity {
 
     /*DB 연동시 필요한 필드들*/
 
-    private static String result = "success";//일단 임시 success
+    private static String result="imsi";//일단 임시 success
 
 
     private static OkHttpClient client=new OkHttpClient().newBuilder().build();
-    private static String OkhttpUrl="http://192.168.1.196:8080/WLP_re/androidDB.jsp";
+    private static String OkhttpUrl="http://3.35.210.3:8080/WLP_re/androidDB.jsp";
     private static MediaType mediaType=MediaType.parse("text/plain");
 
     private static JSONArray patients=null;
@@ -54,11 +55,9 @@ public class DBEntity {
         return patientList.size();
     }
 
-    //Android 프로젝트에 저장되어 있는 patientlist 수정 메소드----------------------------------------------------------------------------------------------------
-    // DB테이블 수정 메소드들의 반환값이 1로 선행되어야 함
 
 
-
+    // DB테이블 수정 메소드---------------------------------------------------------------------------------------------------
 
     public static void connectAppDB(){
         RequestBody body =new FormBody.Builder().add("type","patients_info").build();
@@ -84,6 +83,7 @@ public class DBEntity {
             }
         });
     }
+
     public static void connectMovingDB(){
 
         RequestBody body =new FormBody.Builder().add("type","pmoving_info").build();
@@ -110,9 +110,6 @@ public class DBEntity {
         });
     }
 
-
-    //DB 테이블 수정----------------------------------------------------------------------------------------------------
-
     /*인트로 때, 앱 실행시 한 번만 불리는 메소드드*/
     public static ArrayList<Patient> patient_info() throws JSONException {
         ArrayList<VisitPlace> temp = new ArrayList<VisitPlace>();
@@ -123,13 +120,11 @@ public class DBEntity {
             String plocnum = patient.getString("plocnum");
             String checkNum = plocnum+patient.getString("pnum");
             int small=Integer.parseInt(plocnum.substring(2));
-            Log.d("Small integer", Integer.toString(small));
             int big=Integer.parseInt(plocnum.substring(0,2));
 
 
             for(int j =0; j < movingList.length();j++){
                 JSONObject moving = movingList.getJSONObject(j);
-               // Log.d("json, size", Integer.toString(j));
                 String movingCheckNum = moving.getString("plocnum")+moving.getString("pnum");
                 if(checkNum.equals(movingCheckNum)){
                     temp.add(new VisitPlace(new Place(moving.getString("address"),
@@ -142,62 +137,79 @@ public class DBEntity {
         return patientList;
     }
 
-    /*환자번호와 지역번호로 중복되는 환자가 있는지 확인하는 메소드*/
-    public static int check_patient(int LocalNumber, String patientNum) {
-        if (result.equals("success"))
-        {
-            for(int i =0 ;i< patientList.size();i++){
-                int check =  patientList.get(i).getBigLocalNum()*100 + patientList.get(i).getSmallLocalNum();
-                if(LocalNumber==check && patientNum.equals(patientList.get(i).getPatientNum())){
-                    return 0;
-                }
-            }
-        }
-        return 1;
-    }
-
-    /*관리자의 확진자 추가 페이지에서 확진자 정보를 추가하는 메소-동선 제외 */
-    public int insert_patient(Patient patient) {
-        if (result.equals("success")) return 1;
-        else return 0;
-    }
-
-    /*관리자의 확진자 추가 페이지에서 확진자 동선 정보 하나를 추가하는 메소드-무조건 해당 환자에 한 정보가 테이블에 저장되어 있어야 함. */
-    public int insert_pmoving(Patient patient, VisitPlace visitplace) {
-        if (result.equals("success")) return 1;
-        else return 0;
-    }
-
-    /*관리자의 확진자 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드 */
-    public int delete_pmoving(Patient patient, VisitPlace visitplace) {
-        if (result.equals("success")) return 1;
-        else return 0;
-    }
-
-    /*관리자의 확진자 추가, 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드-환자 정보를 삭제하면 관련 동선 정보도 싹다 삭제*/
-    public int delete_patient(Patient patient) {
-        if (result.equals("success")) return 1;
-        else return 0;
-    }
-
     /*로그인 메소드드*/
-    public int login(String managerID, String managerPW) {
-        if (result.equals("success")) return 1;
-        else return 0;
-        /* 밥소놈이랑 접선시 언롹
-        try {
-            sendmsg = "login";
-            task = new DB(sendmsg);
-            result = task.execute(managerID, managerPW, sendmsg).get();
-            Log.i("Servertest", "서버에서 받은 값" + result);
-            if (result.equals("success")) return 1;
-            else if (result.equals("failed")) return 0;
-            else if (result.equals("noId")) return 2;
+    public static int login(String managerID, String managerPW) throws InterruptedException {
+            RequestBody body = new FormBody.Builder().add("id", managerID).add("pw", managerPW).add("type", "login").build();
+            Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
+
+            final CountDownLatch countDownLatch = new CountDownLatch(1);
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
+                    e.printStackTrace();
+                    countDownLatch.countDown();
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                   // if (response.isSuccessful()) {
+                        result =response.body().string();
+                        Boolean b = result.equals("success");
+                        Log.d("진짜 같냐? ", b.toString());
+                        Log.d("젼쥬", result);
+                        countDownLatch.countDown();
+                  //  }
+                }
+            });
+
+            countDownLatch.await();
+        Log.d("젼쥬22", result);
+            if(result.equals("\n\n\n\n\nsuccess")) return 1;
+            else if(result.equals("\n\n\n\n\nfailed")) return 0;
+            else if(result.equals("\n\n\n\n\nnoID")) return 2;
             else return -1;
-        }catch (Exception e) {
-            Log.i("DBtest", ".....ERROR.....!");
-            return -2;}*/
+
     }
+
+        /*환자번호와 지역번호로 중복되는 환자가 있는지 확인하는 메소드*/
+        public static int DBcheck_patient(int LocalNumber, String patientNum) {
+            RequestBody body =new FormBody.Builder().add("type","patients_info").build();
+            Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
+
+
+            if (result.equals("success")) return 1;
+            else return 0;
+        }
+
+        /*관리자의 확진자 추가 페이지에서 확진자 정보를 추가하는 메소-동선 제외 */
+        public static int insert_patient(Patient patient) {
+            if (result.equals("success")) return 1;
+            else return 0;
+        }
+
+        /*관리자의 확진자 추가 페이지에서 확진자 동선 정보 하나를 추가하는 메소드-무조건 해당 환자에 한 정보가 테이블에 저장되어 있어야 함. */
+        public static int insert_pmoving(Patient patient, VisitPlace visitplace) {
+            if (result.equals("success")) return 1;
+            else return 0;
+        }
+
+        /*관리자의 확진자 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드 */
+        public static int delete_pmoving(Patient patient, VisitPlace visitplace) {
+            if (result.equals("success")) return 1;
+            else return 0;
+        }
+
+        /*관리자의 확진자 추가, 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드-환자 정보를 삭제하면 관련 동선 정보도 싹다 삭제*/
+        public static int delete_patient(Patient patient) {
+            if (result.equals("success")) return 1;
+            else return 0;
+        }
+
+
+
+    //Android 프로젝트에 저장되어 있는 patientlist 수정 메소드: DB 메소드 성공----------------------------------------------------------------------------------------------------
+
     /*관리자의 확진자 추가 페이지에서 확진자 정보를 추가하는 메소-동선 제외 */
     public void AND_insert_patient(Patient patient) {
         patientList.add(patient);
@@ -255,5 +267,19 @@ public class DBEntity {
     /*관리자의 확진자 추가, 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드-환자 정보를 삭제하면 관련 동선 정보도 싹다 삭제*/
     public static void AND_delete_patient(Patient patient) {
         patientList.remove(patient);
+    }
+
+    /*환자번호와 지역번호로 중복되는 환자가 있는지 확인하는 메소드*/
+    public static int check_patient(int LocalNumber, String patientNum) {
+        if (result.equals("success"))
+        {
+            for(int i =0 ;i< patientList.size();i++){
+                int check =  patientList.get(i).getBigLocalNum()*100 + patientList.get(i).getSmallLocalNum();
+                if(LocalNumber==check && patientNum.equals(patientList.get(i).getPatientNum())){
+                    return 0;
+                }
+            }
+        }
+        return 1;
     }
 }
