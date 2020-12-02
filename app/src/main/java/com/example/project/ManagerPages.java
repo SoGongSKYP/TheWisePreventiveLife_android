@@ -18,15 +18,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 
+/**
+ * 관리자 모드
+ * PageOfList(확진자 리스트 페이지)
+ * PageOfAdd(확진자 정보 추가 페이지)
+ * PageOfManager(관리자 정보 페이지)
+ */
 public class ManagerPages extends AppCompatActivity {
-
-    interface DeleteButtonClickListener{
-        void onDeleteClick();
-    }
-    private DeleteButtonClickListener deleteButtonClickListener = null;
-    public void setDeleteButtonClickListener(DeleteButtonClickListener listener){
-        this.deleteButtonClickListener = listener;
-    }
     /*
     public ManagerPages(){
         try {
@@ -49,8 +47,6 @@ public class ManagerPages extends AppCompatActivity {
     private ImageButton deleteButton;
 
     String ID, PW;
-    ArrayList<Patient> data;
-    Patient deletePatient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,9 +76,6 @@ public class ManagerPages extends AppCompatActivity {
             ID = intent.getExtras().getString("managerID");
             PW = intent.getExtras().getString("managerPW");
         }
-
-
-
     }
 
     /* 일반사용자 페이지 네비게이션 바 연결*/

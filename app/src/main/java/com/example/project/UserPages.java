@@ -1,35 +1,44 @@
 package com.example.project;
 
-        import androidx.annotation.NonNull;
-        import androidx.appcompat.app.ActionBar;
-        import androidx.appcompat.app.AppCompatActivity;
-        import androidx.appcompat.widget.Toolbar;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
-        import androidx.fragment.app.FragmentManager;
-        import androidx.fragment.app.FragmentTransaction;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
-        import android.content.Intent;
-        import android.graphics.Color;
-        import android.graphics.drawable.ColorDrawable;
-        import android.os.Bundle;
-        import android.view.MenuItem;
-        import android.view.View;
-        import android.view.Window;
-        import android.view.WindowManager;
-        import android.widget.ImageButton;
-        import android.widget.TextView;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
-        import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-        import org.json.JSONException;
-        import org.xml.sax.SAXException;
+import org.json.JSONException;
+import org.xml.sax.SAXException;
 
-        import java.io.IOException;
-        import java.text.ParseException;
+import java.io.IOException;
+import java.text.ParseException;
 
-        import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.ParserConfigurationException;
 
-
+/**
+ * 사용자 모드
+ * PageOfMain(메인 페이지)
+ * PageOfMyDanger(위험도 계산 페이지)
+ * PageOfStatistics(통계 페이지)
+ * PageOfSelfDiagnosis(자가 진단 페이지)
+ * PageOfSelectedClinic(선별진료소 페이지)
+ * ****************************************
+ * PageOfToManager(관리자 모드 변경 페이지)
+ */
 public class UserPages<Private> extends AppCompatActivity {
 
     /*Bottom Navigation Bar 관련 컴포넌트*/
@@ -204,9 +213,5 @@ public class UserPages<Private> extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-    }
-
-    private void ToolbarInfoButtonAction(){
-
     }
 }
