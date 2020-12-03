@@ -31,7 +31,12 @@
 통계와 별개로 확진자 동선은 api로 직접 제공 되지 않음 
 따라서 관리자가 직접 관리해야하는 부분
 확진자 관리에 편의를 주기 위하여 기능을 추가
-1. 확진자 추가 및 확진자 동선 관리
+확진자 추가 및 확진자 동선 관리
+<div>
+<img width="189" alt="KakaoTalk_20201203_202717232_09" src="https://user-images.githubusercontent.com/57628980/101016563-50223c00-35ac-11eb-9b26-c00173b3fa20.png">
+<img width="189" alt="KakaoTalk_20201203_202717232_10" src="https://user-images.githubusercontent.com/57628980/101016567-51536900-35ac-11eb-90a3-c88a5a5d3ad1.png">
+</div>
+
 
 사용 api
 1. 건강보험심사평가원_코로나19병원정보(국민안심병원 외)서비스: https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15043078
