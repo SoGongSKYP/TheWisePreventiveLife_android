@@ -20,9 +20,13 @@
 <div>
 <img width="189" alt="KakaoTalk_20201203_202717232_03" src="https://user-images.githubusercontent.com/57628980/101015960-7d221f00-35ab-11eb-8f8a-29a19ba806fd.png">
 <img width="189" alt="KakaoTalk_20201203_202717232_04" src="https://user-images.githubusercontent.com/57628980/101015962-7dbab580-35ab-11eb-8f9d-6f28cdbab3f4.png">
+<img width="189" alt="KakaoTalk_20201203_202717232_03" src="https://user-images.githubusercontent.com/57628980/101018119-63cea200-35ae-11eb-930a-0d6c5ab5945e.jpg">
+<img width="189" alt="KakaoTalk_20201203_202717232_04" src="https://user-images.githubusercontent.com/57628980/101018129-66c99280-35ae-11eb-8ff9-928b65a44840.jpg">
 </div>
 5. 내 주변 제일 가까운 5개의 선별진료소 제공
-
+<div>
+<img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101018132-67fabf80-35ae-11eb-89e0-a82389571b6c.jpg">
+</div>
 6. 전국별 지역별 통계 기능 제공
 <div>
 <img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101016037-9925c080-35ab-11eb-9c13-2fbd8490fa93.png">
