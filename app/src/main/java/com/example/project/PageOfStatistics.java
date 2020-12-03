@@ -30,18 +30,20 @@ import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.utils.ColorTemplate;
 
 /**
- *
+ * 통계 페이지 구현
  */
 public class PageOfStatistics extends Fragment {
     ImageButton btn_seoul, btn_busan, btn_daegu, btn_incheon, btn_gwangju, btn_daejeon, btn_ulsan, btn_sejong,
             btn_gyeonggido, btn_gangwondo, btn_chungbuk, btn_chungnam, btn_jeonbuk, btn_jeonnam, btn1_gyeongbuk,
             btn2_gyeongbuk, btn1_gyeongnam, btn2_gyeongnam, btn_jeju;
-    int localNum = 17;
-    String locName="서울";
+
     ArrayList<PieEntry> values = new ArrayList<PieEntry>();
     PieChart pieChart;
     TextView nation1TextView, nation2TextView, nation3TextView, nation4TextView,nation5TextView,
             local1TextView, local2TextView, local3TextView, local4TextView, localTitleTextView;
+
+    private int localNum = 17;
+    private String locName="서울"; // 디폴트 지역 서울
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -67,7 +69,7 @@ public class PageOfStatistics extends Fragment {
         pieC.setDrawHoleEnabled(false);
         pieC.setHoleColor(Color.BLACK);
         pieC.setTransparentCircleRadius(65f);
-        //누적확진비율(각 지역이 전체중에 몇퍼센트를 차지하는지 보여줌)
+        //누적확진비율
         value.add(new PieEntry(nationStatistic.getLocalStatistics().get(localNum).getAccumulatePatient(), nationStatistic.getLocalStatistics().get(localNum).getLocalName()));
         value.add(new PieEntry(nationStatistic.getPatientNum()-nationStatistic.getLocalStatistics().get(localNum).getAccumulatePatient(),"그 외 지역"));
 
@@ -87,7 +89,7 @@ public class PageOfStatistics extends Fragment {
         PieData data = new PieData((dataSet));
         data.setValueTextSize(15f);
         data.setValueTextColor(Color.BLACK);
-        //원형차트 데이터 값 넣어주기
+
         pieChart.setData(data);
     }
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
@@ -126,8 +128,7 @@ public class PageOfStatistics extends Fragment {
         local3TextView = v.findViewById(R.id.user_statistics_3_TextView);
         local4TextView = v.findViewById(R.id.user_statistics_4_TextView);
         localTitleTextView = v.findViewById(R.id.local_title_TextView);
-
-        //전국통계 데이터 값 설정
+//전국통계 데이터 값 설정
         nation1TextView.setText(this.nationStatistic.getPatientNum()+"명");
         nation2TextView.setText(this.nationStatistic.getCareNum()+"명");
         nation3TextView.setText(this.nationStatistic.getHealerNum()+"명");
@@ -178,44 +179,6 @@ public class PageOfStatistics extends Fragment {
     }
 
     private NationStatistics nationStatistic;
-
-    public void nationStatisticsPrint() {
-        System.out.println("전국");
-        System.out.println("기준 일시: "+this.nationStatistic.getStaticsDate());
-
-        System.out.println("누적 검사 횟수 : "+this.nationStatistic.getTestCnt());
-        System.out.println("누적 검사 완료수: "+this.nationStatistic.getTestCntComplete());
-        System.out.println("결과 음성: "+this.nationStatistic.getTestNeg());
-        System.out.println("검사 중: "+this.nationStatistic.getTestNum());
-        Double confirmRate = ((double) this.nationStatistic.getPatientNum()/(double)this.nationStatistic.getTestCntComplete())*100;
-        System.out.println("확진률: "+confirmRate+"%");
-
-        System.out.println("누적 확진자: "+this.nationStatistic.getPatientNum());
-        System.out.println("오늘 확진자: "+this.nationStatistic.getLocalStatistics().get(this.nationStatistic.getLocalStatistics().size()-1).getIncreaseDecrease());
-        System.out.println("지역 유입: "+this.nationStatistic.getLocalStatistics().get(this.nationStatistic.getLocalStatistics().size()-1).getLocConfirm());
-        System.out.println("해외 유입: "+this.nationStatistic.getLocalStatistics().get(this.nationStatistic.getLocalStatistics().size()-1).getBroadConfirm());
-
-        System.out.println("격리 중 : "+this.nationStatistic.getCareNum());
-        System.out.println("누적 격리 해제: "+this.nationStatistic.getHealerNum());
-        System.out.println("사망자: "+this.nationStatistic.getDeadNum());
-        System.out.println("10만명당 확진률: "+this.nationStatistic.getLocalStatistics().get(this.nationStatistic.getLocalStatistics().size()-1).getQurRate()+"%");
-    }
-
-    public void localStatisticsPrint() {
-        System.out.println("지역: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getLocalName());
-        System.out.println("기준 일시: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getStaticsDate());
-
-        System.out.println("누적 확진자: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getAccumulatePatient());
-        System.out.println("오늘 확진자: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getTodayConfirm());
-        System.out.println("지역 유입: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getLocConfirm());
-        System.out.println("해외 유입: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getBroadConfirm());
-
-        System.out.println("격리 중 : "+this.nationStatistic.getLocalStatistics().get(this.localNum).getPatientNum());
-        System.out.println("누적 격리 해제: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getHealerNum());
-        System.out.println("사망자: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getDeadNum());
-        System.out.println("10만명당 확진률: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getAccumulatePatient()+"%");
-    }
-    //지역통계 데이터 
     public void setnum(int localNum){
         local1TextView.setText(this.nationStatistic.getLocalStatistics().get(localNum).getAccumulatePatient()+"명");
         local2TextView.setText(this.nationStatistic.getLocalStatistics().get(localNum).getHealerNum()+"명");
