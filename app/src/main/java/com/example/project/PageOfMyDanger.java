@@ -43,7 +43,7 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- *
+ * 경로 위험도 탐색 page class
  */
 public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
 
