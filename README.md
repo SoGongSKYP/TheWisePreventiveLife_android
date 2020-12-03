@@ -35,6 +35,11 @@
 <div>
 <img width="189" alt="KakaoTalk_20201203_202717232_09" src="https://user-images.githubusercontent.com/57628980/101016563-50223c00-35ac-11eb-9b26-c00173b3fa20.png">
 <img width="189" alt="KakaoTalk_20201203_202717232_10" src="https://user-images.githubusercontent.com/57628980/101016567-51536900-35ac-11eb-90a3-c88a5a5d3ad1.png">
+<img width="189" alt="KakaoTalk_20201203_202717232_11" src="https://user-images.githubusercontent.com/57628980/101016675-75af4580-35ac-11eb-9759-fa596beec59b.png">
+<img width="189" alt="KakaoTalk_20201203_210203575_01" src="https://user-images.githubusercontent.com/57628980/101016678-76e07280-35ac-11eb-8a3b-419f7577c0bd.png">
+<img width="189" alt="KakaoTalk_20201203_210203575_03" src="https://user-images.githubusercontent.com/57628980/101016809-9b3c4f00-35ac-11eb-9eac-f5381b705242.png">
+<img width="189" alt="KakaoTalk_20201203_210203575_04" src="https://user-images.githubusercontent.com/57628980/101016811-9c6d7c00-35ac-11eb-8a7b-98a757e46c78.png">
+<img width="189" alt="KakaoTalk_20201203_210203575_05" src="https://user-images.githubusercontent.com/57628980/101016813-9d061280-35ac-11eb-9e94-2c88555733f8.png">
 </div>
 
 
