@@ -69,7 +69,7 @@ public class APIEntity implements Runnable{
             lock.unlock();
         }
     }
-
+    //전국통계 API
     public NationStatistics nationAPI(ArrayList<LocalStatistics> localList) throws IOException, ParserConfigurationException, SAXException, ParseException {
         NationStatistics nation =null;
         String parsingUrl="";
@@ -82,17 +82,14 @@ public class APIEntity implements Runnable{
         urlBuilder.append("&" + URLEncoder.encode("endCreateDt","UTF-8") + "=" + URLEncoder.encode(this.currDate, "UTF-8")); /*검색할 생성일 범위의 종료*/
 
         URL url = new URL(urlBuilder.toString());
-        //System.out.println(sb.toString());
 
         parsingUrl=url.toString();
-        //System.out.println(parsingUrl);
 
         DocumentBuilderFactory dbFactory=DocumentBuilderFactory.newInstance();
         DocumentBuilder dBuilder=dbFactory.newDocumentBuilder();
         Document doc=dBuilder.parse(parsingUrl);
 
         doc.getDocumentElement().normalize();
-        //System.out.println("Root element : "+doc.getDocumentElement().getNodeName());
 
         NodeList nList=doc.getElementsByTagName("item");
         if(nList.getLength()==0){
@@ -105,10 +102,8 @@ public class APIEntity implements Runnable{
             urlBuilder.append("&" + URLEncoder.encode("endCreateDt","UTF-8") + "=" + URLEncoder.encode(this.yeDate, "UTF-8")); /*검색할 생성일 범위의 종료*/
 
             url = new URL(urlBuilder.toString());
-            //System.out.println(sb.toString());
 
             parsingUrl=url.toString();
-            //System.out.println(parsingUrl);
 
             dbFactory=DocumentBuilderFactory.newInstance();
             dBuilder=dbFactory.newDocumentBuilder();
@@ -135,9 +130,10 @@ public class APIEntity implements Runnable{
                         , Integer.parseInt(getTagValue("accExamCompCnt",eElement)), Double.parseDouble(getTagValue("accDefRate",eElement)));
             }
         }
-        //전국통계 객체 생성
+        //전국통계 객체 
         return nation;
     }
+    //지역통계 API파싱
     public  ArrayList<LocalStatistics> localAPI() throws IOException, ParserConfigurationException, SAXException, ParseException {
         ArrayList<LocalStatistics> localList = new ArrayList<LocalStatistics>();
         String parsingUrl="";
@@ -150,7 +146,6 @@ public class APIEntity implements Runnable{
         urlBuilder.append("&" + URLEncoder.encode("startCreateDt","UTF-8") + "=" + URLEncoder.encode(this.currDate, "UTF-8")); /*검색할 생성일 범위의 시작*/
         urlBuilder.append("&" + URLEncoder.encode("endCreateDt","UTF-8") + "=" + URLEncoder.encode(this.currDate, "UTF-8")); /*검색할 생성일 범위의 종료*/
         URL url = new URL(urlBuilder.toString());
-        //System.out.println(sb.toString());
 
         parsingUrl=url.toString();
         System.out.println(parsingUrl);
@@ -160,7 +155,6 @@ public class APIEntity implements Runnable{
         Document doc=dBuilder.parse(parsingUrl);
 
         doc.getDocumentElement().normalize();
-        //System.out.println("Root element : "+doc.getDocumentElement().getNodeName());
 
         NodeList nList=doc.getElementsByTagName("item");
 
@@ -173,7 +167,6 @@ public class APIEntity implements Runnable{
             urlBuilder.append("&" + URLEncoder.encode("startCreateDt","UTF-8") + "=" + URLEncoder.encode(this.yeDate, "UTF-8")); /*검색할 생성일 범위의 시작*/
             urlBuilder.append("&" + URLEncoder.encode("endCreateDt","UTF-8") + "=" + URLEncoder.encode(this.yeDate, "UTF-8")); /*검색할 생성일 범위의 종료*/
             url = new URL(urlBuilder.toString());
-            //System.out.println(sb.toString());
 
             parsingUrl=url.toString();
             System.out.println(parsingUrl);
@@ -183,7 +176,6 @@ public class APIEntity implements Runnable{
             doc=dBuilder.parse(parsingUrl);
 
             doc.getDocumentElement().normalize();
-            //System.out.println("Root element : "+doc.getDocumentElement().getNodeName());
 
             nList=doc.getElementsByTagName("item");
         }
@@ -209,8 +201,10 @@ public class APIEntity implements Runnable{
 
             }
         }
+        //지역통계 객체 리스트 반환
         return localList;
     }
+    //API에서 태그가 가진 값 받아오기
     private static String getTagValue(String tag, Element eElement) {
         NodeList nlList=eElement.getElementsByTagName(tag).item(0).getChildNodes();
         Node nValue=(Node)nlList.item(0);
