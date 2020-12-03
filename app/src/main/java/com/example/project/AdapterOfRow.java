@@ -12,7 +12,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+/**
+ * Used in PageOfMyDanger
+ * 동선 전체 리스트 출력
+ */
 public class AdapterOfRow extends RecyclerView.Adapter<AdapterOfRow.RowViewHolder> {
 
     interface onRowClickListener{

@@ -9,7 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+/**
+ * Used in DialogOfPlace, DialogOfSearch
+ * 다이얼로그 검색 기능에서 관련 검색어 출력
+ */
 public class AdapterOfSearch extends RecyclerView.Adapter<AdapterOfSearch.SearchViewHolder> {
 
     public interface OnSearchClickListener{

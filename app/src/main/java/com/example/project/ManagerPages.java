@@ -25,15 +25,7 @@ import java.util.ArrayList;
  * PageOfManager(관리자 정보 페이지)
  */
 public class ManagerPages extends AppCompatActivity {
-    /*
-    public ManagerPages(){
-        try {
-            DBEntity.patient_info();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-    }
-    */
+
     /*Bottom Navigation Bar 관련 컴포넌트*/
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private PageOfList pageOfList = new PageOfList();
@@ -67,10 +59,10 @@ public class ManagerPages extends AppCompatActivity {
         actionBar.setDisplayShowCustomEnabled(true);
         actionBar.setDisplayShowTitleEnabled(false);
 
-
         TitleTextView = findViewById(R.id.manager_Title_TextView);
         TitleTextView.setText("확진자 정보 추가");
 
+        /*관리자 ID, PW 받고 넘김*/
         Intent intent = getIntent();
         if(ID == null && PW == null){
             ID = intent.getExtras().getString("managerID");

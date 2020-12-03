@@ -77,7 +77,6 @@ public class PageOfList extends Fragment {
         SmallSpinnerAction();
         //--------------------------------------------------------------------------------------
         /*RecyclerView 연결*/
-
         patientArrayList = new ArrayList<Patient>();
 
         patientRecyclerView = v.findViewById(R.id.list_RecyclerView);

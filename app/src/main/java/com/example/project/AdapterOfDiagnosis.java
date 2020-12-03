@@ -14,7 +14,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-
+/**
+ * Used in PageOfSelfDiagnosis
+ * 자가진단 질문지 출력
+ */
 public class AdapterOfDiagnosis extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int TYPE_ITEM = 1;

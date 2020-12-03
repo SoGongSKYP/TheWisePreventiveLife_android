@@ -11,7 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+/**
+ * Used in ManagerModify, PageOfAdd
+ * 확진자의 동선 출력
+ */
 public class AdapterOfPlace extends RecyclerView.Adapter<AdapterOfPlace.PlaceViewHolder>{
     int mode = 0;   // 1이 수정, 0이 기본
 

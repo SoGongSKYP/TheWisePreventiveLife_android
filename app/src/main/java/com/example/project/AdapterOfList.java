@@ -11,7 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+/**
+ * Used in PageOfList
+ * 확진자 리스트 데이터 출력
+ */
 public class AdapterOfList extends RecyclerView.Adapter<AdapterOfList.ListViewHolder>{
 
     public interface OnListClickListener{

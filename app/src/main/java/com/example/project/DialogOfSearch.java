@@ -20,7 +20,12 @@ import org.json.JSONException;
 
 import java.util.ArrayList;
 import java.util.Objects;
-
+/**
+ * Used in UserPages
+ * 장소 검색 다이얼로그
+ *   - 검색한 장소로 이동 ; PageOfMain, PageOfSelectedClinic
+ *   - 출발, 도착지 검색 ; PageOfMyDanger
+ */
 public class DialogOfSearch extends Dialog {
 
     private Context context;

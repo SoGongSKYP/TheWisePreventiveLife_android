@@ -13,6 +13,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
+/**
+ * Used in PageOfMyDanger
+ * ResultRoute 의 각각의 route 프린트
+ */
 public class AdapterOfCol extends RecyclerView.Adapter<AdapterOfCol.ColViewHolder> {
 
     Context context;

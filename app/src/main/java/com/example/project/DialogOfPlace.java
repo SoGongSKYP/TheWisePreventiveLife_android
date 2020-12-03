@@ -18,7 +18,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.Objects;
-
+/**
+ * Used in PageOfAdd, ManagerModify
+ * 확진자 동선 추가 다이얼로그
+ *   - 확진자 동선 날짜
+ *   - 확진자 방문지 정보
+ */
 public class DialogOfPlace extends Dialog {
 
     private Context mContext;

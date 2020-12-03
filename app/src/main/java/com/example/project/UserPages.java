@@ -161,6 +161,7 @@ public class UserPages<Private> extends AppCompatActivity {
             }
         });
 
+        /*관리자 모드 변경 페이지 전환*/
         InfoImageButton = findViewById(R.id.user_info_ImageButton);
         InfoImageButton.setOnClickListener(new View.OnClickListener(){
             @Override
