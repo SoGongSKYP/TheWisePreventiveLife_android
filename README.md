@@ -4,8 +4,7 @@
 
 1. 인트로
 <div>
-<img src="https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png
-" width="50%"></img>
+<img width="81" alt="KakaoTalk_20201203_202717232" src="https://user-images.githubusercontent.com/57628980/101015642-0edd5c80-35ab-11eb-97b6-81e1547ebfa5.png">
 </div>
 2. 내 주변 확진자 검색
 
