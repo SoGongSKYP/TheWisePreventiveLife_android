@@ -30,7 +30,7 @@ public class DBEntity {
 
 
     private static OkHttpClient client=new OkHttpClient().newBuilder().build();
-    private static String OkhttpUrl="http://192.168.1.196:8080/WLP_re/androidDB.jsp";
+    private static String OkhttpUrl="http://3.35.210.3:8080/WLP_re/androidDB.jsp";
     private static MediaType mediaType=MediaType.parse("text/plain");
 
     private static JSONArray patients=null;
@@ -115,7 +115,7 @@ public class DBEntity {
         countDownLatch.await();
     }
 
-    /*인트로 때, 앱 실행시 한 번만 불리는 메소드드*/
+    /*인트로 때, 앱 실행시 한 번만 불리는 메소드*/
     public static ArrayList<Patient> patient_info() throws JSONException {
         ArrayList<VisitPlace> temp = new ArrayList<VisitPlace>();
 
@@ -232,7 +232,7 @@ public class DBEntity {
             else return -1;
         }
 
-        /*관리자의 확진자 추가 페이지에서 확진자 동선 정보 하나를 추가하는 메소드-무조건 해당 환자에 한 정보가 테이블에 저장되어 있어야 함. */
+        /*관리자의 확진자 동선 정보 하나를 추가하는 메소드-무조건 해당 환자에 한 정보가 테이블에 저장되어 있어야 함. */
         public static int insert_pmoving(Patient patient, VisitPlace visitplace) throws InterruptedException {
             String pnum=patient.getPatientNum();
             String bloc=String.format("%02d",patient.getBigLocalNum());
@@ -262,14 +262,11 @@ public class DBEntity {
                 }
             });
             countDownLatch.await();
-            Boolean b = result.equals("success");
-            Log.d("진짜 같냐? ", b.toString());
-            Log.d("젼쥬", result);
             if(result.equals("\n\n\n\nsuccess")) return 1;
             else return -1;
         }
 
-        /*관리자의 확진자 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드 */
+        /*관리자의 확진자 동선 정보 하나를 삭제하는 메소드 */
         public static int delete_pmoving(Patient patient, VisitPlace visitplace) throws InterruptedException {
             String pnum=patient.getPatientNum();
             String bloc=String.format("%02d",patient.getBigLocalNum());
@@ -278,7 +275,6 @@ public class DBEntity {
             String visitdate=visitplace.getVisitDate();
             Double pointx=visitplace.getVisitPlace().get_placeX();
             Double pointy=visitplace.getVisitPlace().get_placeY();
-
 
             //pnum, plocnum, visitdate, Double.parseDouble(pointx), Double.parseDouble(pointy), address);
             RequestBody body = new FormBody.Builder().add("pnum", pnum).add("plocnum", plocnum).add("visitdate", visitdate).add("pointx", String.valueOf(pointx)).add("pointy", String.valueOf(pointy)).add("type", "delete_pmoving").build();
@@ -350,14 +346,10 @@ public class DBEntity {
     /*관리자의 확진자 추가 페이지에서 확진자 동선 정보 하나를 추가하는 메소드-무조건 해당 환자에 한 정보가 테이블에 저장되어 있어야 함. */
     public static int AND_insert_pmoving(Patient patient, VisitPlace visitplace) {
         for (int i = 0; i < patientList.size(); i++) {
-            Log.d("AND 환자 : ", patient.getPatientNum()+", "+Integer.toString(patient.getSmallLocalNum())+", "+Integer.toString(patient.getBigLocalNum()));
             if (patient.getSmallLocalNum() == patientList.get(i).getSmallLocalNum() && patient.getBigLocalNum() == patientList.get(i).getBigLocalNum()
                     && patient.getPatientNum().equals(patientList.get(i).getPatientNum())) {
                 //조건문 바꿔야 함! patient 테이블의 프라이머리 키는 지역번호랑 환자번호! 즉 patient와 patientList.get(i)의 정보가 같을 두객체가 같을 때——————————————————————————————————————————————————patient는 smalllocalnum,bigloculnum,patientnum 같으면 같은 객체!
-                Log.d("patient",Integer.toString(patientList.get(i).getVisitPlaceList().size()));
                 patientList.get(i).getVisitPlaceList().add(visitplace);
-                Log.d("patient",Integer.toString(patientList.get(i).getVisitPlaceList().size()));
-                //해당 환자에 visitplace 추가
                 return 1;// 동선 삽입 성공
             }
         }
@@ -379,13 +371,13 @@ public class DBEntity {
                 if(t!=-1){
                     patientList.get(i).getVisitPlaceList().remove(t);
                 }
-                //setPatientList(patientList);
                 Log.d("patient",Integer.toString(patientList.get(i).getVisitPlaceList().size()));
                 return 1;//정상 삭제
             }
         }
         return -1;//환자 정보도 없을 경우
     }
+
     public static int findIndex(ArrayList<VisitPlace> visitplaceList,VisitPlace visitplace2){
         for(int i =0; i <visitplaceList.size();i++){
             if(visitplaceList.get(i).getVisitDate().equals(visitplace2.getVisitDate())&&
