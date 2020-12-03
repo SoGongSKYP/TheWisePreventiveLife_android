@@ -15,14 +15,20 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-public class clinicAPIEntity implements Runnable{
-    private static ArrayList<SelectedClinic> clinicsList;
-    int index ;
+/**
+ * 선별 진료소 api와 통신할 class
+ * 사용api: https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15043078
+ */
+
+public class clinicAPIEntity implements Runnable{ // 스레딩을 위해 Runnable을 implements해서 구현
+    private static ArrayList<SelectedClinic> clinicsList;// 결과로 나온 clinicAPI
+    int index; // 멀티 쓰레드를 위한 인덱스 변수
 
     public clinicAPIEntity( int index) {
         this.clinicsList = new ArrayList<SelectedClinic>();
         this.index = index;
     }
+
     public ArrayList<SelectedClinic> clinicAPI(int index) throws IOException, ParserConfigurationException, SAXException {
         ArrayList<SelectedClinic> clinicsList= new ArrayList<SelectedClinic>();
 
@@ -56,13 +62,14 @@ public class clinicAPIEntity implements Runnable{
             }
         }
         return clinicsList;
-    }
+    } // 선별진료소 api와 통신 및 xml파싱
     private static String getTagValue(String tag, Element eElement) {
         NodeList nlList=eElement.getElementsByTagName(tag).item(0).getChildNodes();
         Node nValue=(Node)nlList.item(0);
         if(nValue==null) return null;
         return nValue.getNodeValue();
-    }
+    } // 태그 값을 읽어올 함수
+
     public static ArrayList<SelectedClinic> getClinicsList() {
         return clinicsList;
     }
