@@ -94,7 +94,6 @@ public class DBEntity {
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                Log.d("연결 실패", "error Connect Server error is"+e.toString());
                 e.printStackTrace();
                 countDownLatch.countDown();
             }
@@ -151,7 +150,6 @@ public class DBEntity {
             client.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
                     e.printStackTrace();
                     countDownLatch.countDown();
                 }
@@ -159,13 +157,11 @@ public class DBEntity {
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
                         result =response.body().string();
-                    Log.d("로그인 받은", result);
                         countDownLatch.countDown();
                 }
             });
 
             countDownLatch.await();
-        Log.d("로그인 받은22", result);
             if(result.equals("\n\n\n\nsuccess")) return 1;
             else if(result.equals("\n\n\n\nfailed")) return 0;
             else if(result.equals("\n\n\n\nnoID")) return 2;
@@ -181,7 +177,6 @@ public class DBEntity {
             client.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
                     e.printStackTrace();
                     countDownLatch.countDown();
                 }
@@ -194,7 +189,6 @@ public class DBEntity {
             });
 
             countDownLatch.await();
-            Log.d("환자 중복확인", result);
             if(result.equals("\n\n\n\nnewP")) return 1;
             else if(result.equals("\n\n\n\nexist")) return 0;
             else return -1;
@@ -214,7 +208,6 @@ public class DBEntity {
             client.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
                     e.printStackTrace();
                     countDownLatch.countDown();
                 }
@@ -227,7 +220,6 @@ public class DBEntity {
             });
 
             countDownLatch.await();
-            Log.d("환자 츄가", result);
             if(result.equals("\n\n\n\nsuccess")) return 1;
             else return -1;
         }
@@ -250,7 +242,6 @@ public class DBEntity {
             client.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
                     e.printStackTrace();
                     countDownLatch.countDown();
                 }
@@ -284,7 +275,6 @@ public class DBEntity {
             client.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
                     e.printStackTrace();
                     countDownLatch.countDown();
                 }
@@ -297,7 +287,6 @@ public class DBEntity {
             });
 
             countDownLatch.await();
-            Log.d("쥬삭제 젼쥬22", result);
             if(result.equals("\n\n\n\nsuccess")) return 1;
             else return -1;
         }
@@ -316,7 +305,6 @@ public class DBEntity {
             client.newCall(request).enqueue(new Callback() {
                 @Override
                 public void onFailure(Call call, IOException e) {
-                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
                     e.printStackTrace();
                     countDownLatch.countDown();
                 }
@@ -363,7 +351,6 @@ public class DBEntity {
         for (int i = 0; i < patientList.size(); i++) {
             //1. 환자리스트를 돌며 동일한 환자 찾기.
             //DB테이블에서의 primary 키값들의 값이 같을 때 동일 환자.
-            Log.d("AND 환자 : ", patient.getPatientNum()+", "+Integer.toString(patient.getSmallLocalNum())+", "+Integer.toString(patient.getBigLocalNum()));
             if (patient.getSmallLocalNum() == patientList.get(i).getSmallLocalNum() && patient.getBigLocalNum() == patientList.get(i).getBigLocalNum()
                     && patient.getPatientNum().equals(patientList.get(i).getPatientNum())){
                 //칮으면 해당 환자의 visitplacelist를 돌며 매개변수로 온 visitplace 찾고 삭제하기
