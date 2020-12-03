@@ -11,17 +11,17 @@ import android.util.Log;
 import androidx.core.content.ContextCompat;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+/**
+ * 유저 위치 관련 기능 Class
+ * Static으로 사용
+ */
 public class UserLoc extends AppCompatActivity {
-    /**
-     * Default constructor
-     */
 
     private static Place userPlace = new Place("동국대학교 정보문화관", 37.559562, 126.998557);
-    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10;
-    private static final long MIN_TIME_BW_UPDATES = 1000 * 10 * 1;
+    //유저 장소 표시할 변수 디폴트 값으로 동국대학교 정보 문화관 넣어주고 있음
+    private static final long MIN_DISTANCE_CHANGE_FOR_UPDATES = 10; // GPS를 업데이트할 최소 거리
+    private static final long MIN_TIME_BW_UPDATES = 1000 * 10 * 1; // GPS를 업데이트할 시간
 
-    // 1: 사용자 위치정보 허용 상태, 2: 사용자 위치 정보 허용하지 않은 상태
     public UserLoc() {
     }
 
@@ -32,6 +32,8 @@ public class UserLoc extends AppCompatActivity {
     public Integer getMode() {
         return ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION);
     }
+    /* 현재 위치 정보 제공 동의했는지 안했는지를 반환해주는 함수
+    1: 사용자 위치정보 허용 상태, 2: 사용자 위치 정보 허용하지 않은 상태*/
 
     public static void setUser_place(Place place) {
         userPlace = place;
@@ -75,5 +77,5 @@ public class UserLoc extends AppCompatActivity {
         } catch (Exception e) {
             Log.d("@@@", "" + e.toString());
         }
-    }
+    }// GPS 작동 함수
 }
