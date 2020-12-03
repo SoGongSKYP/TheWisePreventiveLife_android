@@ -7,7 +7,9 @@
 <img width="189" alt="KakaoTalk_20201203_202717232_01" src="https://user-images.githubusercontent.com/57628980/101015840-54018e80-35ab-11eb-9968-8458b856d3c6.png">
 </div>
 2. 내 주변 확진자 검색
-
+<div>
+<img width="189" alt="KakaoTalk_20201203_210203575" src="https://user-images.githubusercontent.com/57628980/101016223-cffbd680-35ab-11eb-9fb3-597da9c737f0.png">
+</div>
 3. 경로 위험도 측정 기능
 
 4. 자가진단 기능
@@ -16,10 +18,12 @@
 <img width="189" alt="KakaoTalk_20201203_202717232_04" src="https://user-images.githubusercontent.com/57628980/101015962-7dbab580-35ab-11eb-8f9d-6f28cdbab3f4.png">
 </div>
 5. 내 주변 제일 가까운 5개의 선별진료소 제공
+
 6. 전국별 지역별 통계 기능 제공
 <div>
 <img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101016037-9925c080-35ab-11eb-9c13-2fbd8490fa93.png">
 </div>
+
 
 관리자 기능
 통계와 별개로 확진자 동선은 api로 직접 제공 되지 않음 
