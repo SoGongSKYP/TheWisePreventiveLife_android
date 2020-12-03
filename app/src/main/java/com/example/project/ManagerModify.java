@@ -149,7 +149,11 @@ public class ManagerModify extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "확진자 동선 수정 모드입니다.", Toast.LENGTH_SHORT).show();
                 }else{
                     now = MODE.DEF;
-                    saveEditData();
+                    try {
+                        saveEditData();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     setDefMode();
                     Toast.makeText(getApplicationContext(), "변경 사항을 저장했습니다.", Toast.LENGTH_SHORT).show();
 
@@ -185,18 +189,25 @@ public class ManagerModify extends AppCompatActivity {
         patientRecyclerView.setAdapter(adapter);
     }
 
-    private void saveEditData(){
+    private void saveEditData() throws InterruptedException {
         // 이곳에서 변경된 데이터를 업데이트 함
         // DBEntity 클래스의 pmoving_delete 함수, insert 함수
         for(int i=0; i<deletePlaceArrayList.size();i++){
             VisitPlace vp = deletePlaceArrayList.get(i);
-            int result1 = DBEntity.AND_delete_pmoving(data, vp);
-            Log.d("확진자 방문지 삭제리스트 삭제 완료 : ", Integer.toString(result1));
+            int result1 = DBEntity.delete_pmoving(data, vp);
+            if(result1==1) {
+                DBEntity.AND_delete_pmoving(data, vp);
+                Log.d("확진자 방문지 삭제리스트 삭제 완료 : ", Integer.toString(result1));
+            }
+
         }
         for(int i=0; i<addPlaceArrayList.size(); i++){
             VisitPlace vp = addPlaceArrayList.get(i);
-            int result2 = DBEntity.AND_insert_pmoving(data, vp);
-            Log.d("확진자 방문지 추가리스트 추가 완료 : ", Integer.toString(result2));
+            int result2 = DBEntity.insert_pmoving(data, vp);
+            if(result2==1) {
+                DBEntity.AND_insert_pmoving(data, vp);
+                Log.d("확진자 방문지 추가리스트 추가 완료 : ", Integer.toString(result2));
+            }
         }
         Toast.makeText(this, "변경 사항이 저장되었습니다.", Toast.LENGTH_SHORT).show();
     }

@@ -30,7 +30,7 @@ public class DBEntity {
 
 
     private static OkHttpClient client=new OkHttpClient().newBuilder().build();
-    private static String OkhttpUrl="http://3.35.210.3:8080/WLP_re/androidDB.jsp";
+    private static String OkhttpUrl="http://192.168.1.196:8080/WLP_re/androidDB.jsp";
     private static MediaType mediaType=MediaType.parse("text/plain");
 
     private static JSONArray patients=null;
@@ -39,9 +39,7 @@ public class DBEntity {
 
     //patientList 값 접-----------------------------------------------------------------------------------------------
 
-    public DBEntity() {
-
-    }
+    public DBEntity() { }
 
     public void setPatientList(ArrayList<Patient> patientList) {
         this.patientList = patientList;
@@ -59,15 +57,16 @@ public class DBEntity {
 
     // DB테이블 수정 메소드---------------------------------------------------------------------------------------------------
 
-    public static void connectAppDB(){
+    public static void connectAppDB() throws InterruptedException {
         RequestBody body =new FormBody.Builder().add("type","patients_info").build();
         Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
-
+        final CountDownLatch countDownLatch = new CountDownLatch(1);
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.d("연결 실패", "error Connect Server error is"+e.toString());
                 e.printStackTrace();
+                countDownLatch.countDown();
             }
 
             @Override
@@ -78,22 +77,26 @@ public class DBEntity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+                    countDownLatch.countDown();
                     Log.d("patient json array",patients.toString());
                 }
             }
         });
+      
+        countDownLatch.await();
     }
 
-    public static void connectMovingDB(){
+    public static void connectMovingDB() throws InterruptedException {
 
         RequestBody body =new FormBody.Builder().add("type","pmoving_info").build();
         Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
-
+        final CountDownLatch countDownLatch = new CountDownLatch(1);
         client.newCall(request).enqueue(new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
                 Log.d("연결 실패", "error Connect Server error is"+e.toString());
                 e.printStackTrace();
+                countDownLatch.countDown();
             }
 
             @Override
@@ -104,10 +107,12 @@ public class DBEntity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
+                    countDownLatch.countDown();
                     Log.d("pmoving json array",movingList.toString());
                 }
             }
         });
+        countDownLatch.await();
     }
 
     /*인트로 때, 앱 실행시 한 번만 불리는 메소드드*/
@@ -153,57 +158,184 @@ public class DBEntity {
 
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
-                   // if (response.isSuccessful()) {
                         result =response.body().string();
-                        Boolean b = result.equals("success");
-                        Log.d("진짜 같냐? ", b.toString());
-                        Log.d("젼쥬", result);
+                    Log.d("로그인 받은", result);
                         countDownLatch.countDown();
-                  //  }
                 }
             });
 
             countDownLatch.await();
-        Log.d("젼쥬22", result);
-            if(result.equals("\n\n\n\n\nsuccess")) return 1;
-            else if(result.equals("\n\n\n\n\nfailed")) return 0;
-            else if(result.equals("\n\n\n\n\nnoID")) return 2;
+        Log.d("로그인 받은22", result);
+            if(result.equals("\n\n\n\nsuccess")) return 1;
+            else if(result.equals("\n\n\n\nfailed")) return 0;
+            else if(result.equals("\n\n\n\nnoID")) return 2;
             else return -1;
-
     }
 
         /*환자번호와 지역번호로 중복되는 환자가 있는지 확인하는 메소드*/
-        public static int DBcheck_patient(int LocalNumber, String patientNum) {
-            RequestBody body =new FormBody.Builder().add("type","patients_info").build();
+        public static int DBcheck_patient(String plocnum, String pnum) throws InterruptedException {
+            RequestBody body = new FormBody.Builder().add("pnum", pnum).add("plocnum", plocnum).add("type", "check_patient").build();
             Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
 
+            final CountDownLatch countDownLatch = new CountDownLatch(1);
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
+                    e.printStackTrace();
+                    countDownLatch.countDown();
+                }
 
-            if (result.equals("success")) return 1;
-            else return 0;
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    result =response.body().string();
+                    countDownLatch.countDown();
+                }
+            });
+
+            countDownLatch.await();
+            Log.d("환자 중복확인", result);
+            if(result.equals("\n\n\n\nnewP")) return 1;
+            else if(result.equals("\n\n\n\nexist")) return 0;
+            else return -1;
         }
 
         /*관리자의 확진자 추가 페이지에서 확진자 정보를 추가하는 메소-동선 제외 */
-        public static int insert_patient(Patient patient) {
-            if (result.equals("success")) return 1;
-            else return 0;
+        public static int insert_patient(Patient patient) throws InterruptedException {
+            String pnum=patient.getPatientNum();
+            String bloc=String.format("%02d",patient.getBigLocalNum());
+            String sloc=String.format("%02d",patient.getSmallLocalNum());
+            String plocnum=bloc+sloc;
+            String confirmdate=patient.getConfirmDate();
+            RequestBody body = new FormBody.Builder().add("pnum", pnum).add("plocnum", plocnum).add("confirmdate", confirmdate).add("type", "insert_patient").build();
+            Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
+
+            final CountDownLatch countDownLatch = new CountDownLatch(1);
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
+                    e.printStackTrace();
+                    countDownLatch.countDown();
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    result =response.body().string();
+                    countDownLatch.countDown();
+                }
+            });
+
+            countDownLatch.await();
+            Log.d("환자 츄가", result);
+            if(result.equals("\n\n\n\nsuccess")) return 1;
+            else return -1;
         }
 
         /*관리자의 확진자 추가 페이지에서 확진자 동선 정보 하나를 추가하는 메소드-무조건 해당 환자에 한 정보가 테이블에 저장되어 있어야 함. */
-        public static int insert_pmoving(Patient patient, VisitPlace visitplace) {
-            if (result.equals("success")) return 1;
-            else return 0;
+        public static int insert_pmoving(Patient patient, VisitPlace visitplace) throws InterruptedException {
+            String pnum=patient.getPatientNum();
+            String bloc=String.format("%02d",patient.getBigLocalNum());
+            String sloc=String.format("%02d",patient.getSmallLocalNum());
+            String plocnum=bloc+sloc;
+            String visitdate=visitplace.getVisitDate();
+            Double pointx=visitplace.getVisitPlace().get_placeX();
+            Double pointy=visitplace.getVisitPlace().get_placeY();
+            String address=visitplace.getVisitPlace().get_placeAddress();
+
+            RequestBody body = new FormBody.Builder().add("pnum", pnum).add("plocnum", plocnum).add("visitdate", visitdate).add("pointx", String.valueOf(pointx)).add("pointy", String.valueOf(pointy)).add("address", address).add("type", "insert_pmoving").build();
+            Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
+
+            final CountDownLatch countDownLatch = new CountDownLatch(1);
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
+                    e.printStackTrace();
+                    countDownLatch.countDown();
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    result =response.body().string();
+                    countDownLatch.countDown();
+                }
+            });
+            countDownLatch.await();
+            Boolean b = result.equals("success");
+            Log.d("진짜 같냐? ", b.toString());
+            Log.d("젼쥬", result);
+            if(result.equals("\n\n\n\nsuccess")) return 1;
+            else return -1;
         }
 
         /*관리자의 확진자 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드 */
-        public static int delete_pmoving(Patient patient, VisitPlace visitplace) {
-            if (result.equals("success")) return 1;
-            else return 0;
+        public static int delete_pmoving(Patient patient, VisitPlace visitplace) throws InterruptedException {
+            String pnum=patient.getPatientNum();
+            String bloc=String.format("%02d",patient.getBigLocalNum());
+            String sloc=String.format("%02d",patient.getSmallLocalNum());
+            String plocnum=bloc+sloc;
+            String visitdate=visitplace.getVisitDate();
+            Double pointx=visitplace.getVisitPlace().get_placeX();
+            Double pointy=visitplace.getVisitPlace().get_placeY();
+
+
+            //pnum, plocnum, visitdate, Double.parseDouble(pointx), Double.parseDouble(pointy), address);
+            RequestBody body = new FormBody.Builder().add("pnum", pnum).add("plocnum", plocnum).add("visitdate", visitdate).add("pointx", String.valueOf(pointx)).add("pointy", String.valueOf(pointy)).add("type", "delete_pmoving").build();
+            Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
+
+            final CountDownLatch countDownLatch = new CountDownLatch(1);
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
+                    e.printStackTrace();
+                    countDownLatch.countDown();
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    result =response.body().string();
+                    countDownLatch.countDown();
+                }
+            });
+
+            countDownLatch.await();
+            Log.d("쥬삭제 젼쥬22", result);
+            if(result.equals("\n\n\n\nsuccess")) return 1;
+            else return -1;
         }
 
         /*관리자의 확진자 추가, 수정 페이지에서 확진자 동선 정보 하나를 삭제하는 메소드-환자 정보를 삭제하면 관련 동선 정보도 싹다 삭제*/
-        public static int delete_patient(Patient patient) {
-            if (result.equals("success")) return 1;
-            else return 0;
+        public static int delete_patient(Patient patient) throws InterruptedException {
+            String pnum=patient.getPatientNum();
+            String bloc=String.format("%02d",patient.getBigLocalNum());
+            String sloc=String.format("%02d",patient.getSmallLocalNum());
+            String plocnum=bloc+sloc;
+
+            RequestBody body = new FormBody.Builder().add("pnum", pnum).add("plocnum", plocnum).add("type", "delete_patient").build();
+            Request request = new Request.Builder().url(OkhttpUrl).method("POST", body).build();
+
+            final CountDownLatch countDownLatch = new CountDownLatch(1);
+            client.newCall(request).enqueue(new Callback() {
+                @Override
+                public void onFailure(Call call, IOException e) {
+                    Log.d("연결 실패", "error Connect Server error is"+e.toString());
+                    e.printStackTrace();
+                    countDownLatch.countDown();
+                }
+
+                @Override
+                public void onResponse(Call call, Response response) throws IOException {
+                    result =response.body().string();
+                    countDownLatch.countDown();
+                }
+            });
+
+            countDownLatch.await();
+            if(result.equals("\n\n\n\nsuccess")) return 1;
+            else if(result.equals("\n\n\n\nfail")) return 0;
+            else return -1;
         }
 
 

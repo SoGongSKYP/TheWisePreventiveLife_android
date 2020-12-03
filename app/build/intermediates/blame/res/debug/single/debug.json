@@ -4,16 +4,12 @@
         "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_activity_user_danger_search.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/activity_user_danger_search.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_manager_info.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_manager_info.xml"
     },
     {
         "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_manager_info.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_manager_info.xml"
     },
     {
         "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_search_result.xml.flat",
@@ -32,16 +28,16 @@
         "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/dialog_patient_visit.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_run.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/run.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_bookmark.png.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/bookmark.png"
     },
     {
         "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_danger_box.xml.flat",
         "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/danger_box.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_bookmark.png.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/bookmark.png"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_run.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/run.xml"
     },
     {
         "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_row_round_white.xml.flat",
@@ -64,16 +60,16 @@
         "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/result_box_yellow.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_result_box_green.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/result_box_green.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_user_danger.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_user_danger.xml"
     },
     {
         "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_row_patient_visit.xml.flat",
         "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/row_patient_visit.xml"
     },
     {
-        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/layout_fragment_user_danger.xml.flat",
-        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/layout/fragment_user_danger.xml"
+        "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_result_box_green.xml.flat",
+        "source": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/src/main/res/drawable/result_box_green.xml"
     },
     {
         "merged": "/Users/soyoungpark/AndroidStudioProjects/WPL_android/app/build/intermediates/res/merged/debug/drawable_hospital1.png.flat",

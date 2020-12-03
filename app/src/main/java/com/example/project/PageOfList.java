@@ -108,8 +108,6 @@ public class PageOfList extends Fragment {
                 //DBEntity에서도 삭제
             }
         });
-
-
         return v;
     }
 
@@ -154,6 +152,7 @@ public class PageOfList extends Fragment {
         });
     }
 
+
     private void showList(int bigLoc, int smallLoc){
         for(int i = 0;i<totalArrayList.size();i++){
             Patient row =  totalArrayList.get(i);
@@ -177,13 +176,19 @@ public class PageOfList extends Fragment {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 //delete data
                                 Patient removePatient = patientArrayList.get(pos);
-                                patientArrayList.remove(removePatient);
-                                totalArrayList.remove(removePatient);
-                                adapter.notifyDataSetChanged();
+                                try {
+                                    int check=DBEntity.delete_patient(removePatient);
+                                    if(check==1) {
+                                        DBEntity.AND_delete_patient(removePatient);
+                                        Toast.makeText(getContext(), "현재 확진자 정보를 삭제합니다", Toast.LENGTH_SHORT).show();
 
-                                DBEntity.AND_delete_patient(removePatient);
-                                Log.d("삭제되었나?", Integer.toString(DBEntity.ListSize()));
-                                Toast.makeText(getContext(), "현재 확진자 정보를 삭제합니다", Toast.LENGTH_SHORT).show();
+                                        patientArrayList.remove(removePatient);
+                                        totalArrayList.remove(removePatient);
+                                        adapter.notifyDataSetChanged();
+                                    } else{ Toast.makeText(getContext(), "삭제 실패! 삭제하고자 하는 확진자의 모든 동선을 미리 삭제해 주십시오.", Toast.LENGTH_SHORT).show();}
+                                } catch (InterruptedException e) {
+                                    e.printStackTrace();
+                                }
                             }
                         })
                 .setNegativeButton("취소",

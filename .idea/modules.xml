@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ODsayAndroidSDK/ODsayAndroidSDK.iml" filepath="$PROJECT_DIR$/.idea/modules/ODsayAndroidSDK/ODsayAndroidSDK.iml" group="project/ODsayAndroidSDK" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="project/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.iml" filepath="$PROJECT_DIR$/.idea/modules/project.iml" group="project" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project.iml" filepath="$PROJECT_DIR$/.idea/modules/project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ODsayAndroidSDK/project.ODsayAndroidSDK.iml" filepath="$PROJECT_DIR$/.idea/modules/ODsayAndroidSDK/project.ODsayAndroidSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/project.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/project.app.iml" />
     </modules>
   </component>
 </project>

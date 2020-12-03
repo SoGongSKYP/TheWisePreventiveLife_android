@@ -35,13 +35,21 @@ public class PageOfIntro extends AppCompatActivity {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                DBEntity.connectAppDB();
+                try {
+                    DBEntity.connectAppDB();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }).start();
         new Thread(new Runnable() {
             @Override
             public void run() {
-                DBEntity.connectMovingDB();
+                try {
+                    DBEntity.connectMovingDB();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }).start();
 

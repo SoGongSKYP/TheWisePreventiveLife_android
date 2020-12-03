@@ -148,7 +148,18 @@ public class PageOfAdd<STATE_DUPLE_FALSE> extends Fragment {
                     if(patientNumEditText.getText() != null && patientDateEditText.getText() !=null){
                         GetDataFromUI();
                         int localNumber = pBigLocal*100+pSmallLocal;
-                        if(DBEntity.check_patient(localNumber, patientNumEditText.getText().toString())==1){
+                        String bloc=String.format("%02d",pBigLocal);
+                        String sloc=String.format("%02d",pSmallLocal);
+                        String plocnum=bloc+sloc;
+
+                        //if(DBEntity.check_patient(localNumber, patientNumEditText.getText().toString())==1){
+                        int check= 0;
+                        try {
+                            check = DBEntity.DBcheck_patient(plocnum, patientNumEditText.getText().toString());
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                        if(check==1){
                             dupleCheckTextView.setText("중복 확인! 아래에서 확진자 동선을 추가하세요");
                             dupleCheckTextView.setTextColor(ContextCompat.getColor(getContext(), R.color.colorGreen));
                             dupleCheck = true;
@@ -165,10 +176,20 @@ public class PageOfAdd<STATE_DUPLE_FALSE> extends Fragment {
                     }
                 }
                 else if(dupleCheck == true && saveCheck == false){  // 저장 버튼 클릭 후
-                    Log.d("현재 DB엔티티 더미데이터 크기 : ", Integer.toString(dbEntity.ListSize()));
+                    //Log.d("현재 DB엔티티 더미데이터 크기 : ", Integer.toString(dbEntity.ListSize()));
                     Patient addPatient = new Patient(pSmallLocal, pBigLocal, pNum, pDate, visitPlaces);
-                    dbEntity.AND_insert_patient(addPatient);
-                    Log.d("지금 추가 후 DB엔티티 더미데이터 크기 : ", Integer.toString(dbEntity.ListSize()));
+                    try {
+                        if(dbEntity.insert_patient(addPatient)==1){
+                            for(int i=0; i<visitPlaces.size(); i++){
+                                VisitPlace vp = visitPlaces.get(i);
+                                int result2 = DBEntity.insert_pmoving(addPatient, vp);
+                            }
+                            dbEntity.AND_insert_patient(addPatient);
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                   // Log.d("지금 추가 후 DB엔티티 더미데이터 크기 : ", Integer.toString(dbEntity.ListSize()));
 
                     Toast.makeText(getContext(), "확진자"+pNum+" 정보가 저장되었습니다.", Toast.LENGTH_SHORT).show();
                     dupleButton.setText("새 로 고 침");

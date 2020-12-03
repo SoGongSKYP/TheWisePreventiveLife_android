@@ -48,7 +48,6 @@
         <activity android:name="com.example.project.UserPages" />
 
         <service android:name="com.example.project.UserPages" />
-        <service android:name="com.example.project.RestartService" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

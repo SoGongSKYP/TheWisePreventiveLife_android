@@ -3039,7 +3039,6 @@ layout activity_intro
 layout activity_manager_modify
 layout activity_manager_pages
 layout activity_to_manager
-layout activity_user_danger_search
 layout activity_user_diagnosis_result
 layout activity_user_pages
 layout browser_actions_context_menu_page
