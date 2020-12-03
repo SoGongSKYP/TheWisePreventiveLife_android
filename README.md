@@ -26,6 +26,7 @@
 6. 전국별 지역별 통계 기능 제공
 <div>
 <img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101016037-9925c080-35ab-11eb-9c13-2fbd8490fa93.png">
+<img width="189" alt="KakaoTalk_20201203_202717232_05" src="  https://user-images.githubusercontent.com/57628980/101017989-2ec24f80-35ae-11eb-9325-ad708ec535dc.jpg">
 </div>
 
 7. 사용자가 임의로 위치 변경
