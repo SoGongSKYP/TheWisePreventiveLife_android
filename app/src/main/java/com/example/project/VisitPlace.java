@@ -3,12 +3,13 @@ import java.io.Serializable;
 
 
 /**
- * 확진자 방문 장소 저장할 class
+ * 확진자 방문 장소 저장할 clas
+ * 사용자 정의 형으로 사용
  */
 public class VisitPlace implements Serializable {
 
-    private Place visitPlace;
-    private String visitDate;
+    private Place visitPlace; /*방문 장소*/
+    private String visitDate; /*방문 날짜*/
 
     //Constructor
     public VisitPlace(Place place, String date) {
@@ -51,7 +52,6 @@ public class VisitPlace implements Serializable {
         }
         return (dist);
     }
-
 
     // This function converts decimal degrees to radians
     private static double deg2rad(double deg) {
