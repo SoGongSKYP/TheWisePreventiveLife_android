@@ -11,16 +11,14 @@
 3. 경로 위험도 측정 기능
 
 4. 자가진단 기능
-<img src="https://user-images.githubusercontent.com/57628980/101014689-9a55ee00-35a9-11eb-87ad-8b470e218445.png
-" width="50%"></img>
-<img src="https://user-images.githubusercontent.com/57628980/101014693-9c1fb180-35a9-11eb-94f9-8368765ab2ec.png
-" width="50%"></img>
-
+<div>
+<img width="189" alt="KakaoTalk_20201203_202717232_03" src="https://user-images.githubusercontent.com/57628980/101015960-7d221f00-35ab-11eb-8f8a-29a19ba806fd.png">
+<img width="189" alt="KakaoTalk_20201203_202717232_04" src="https://user-images.githubusercontent.com/57628980/101015962-7dbab580-35ab-11eb-8f9d-6f28cdbab3f4.png">
+</div>
 5. 내 주변 제일 가까운 5개의 선별진료소 제공
 6. 전국별 지역별 통계 기능 제공
 <div>
-<img src="https://user-images.githubusercontent.com/57628980/101014792-c4a7ab80-35a9-11eb-81e2-1369e2034487.png
-" width="50%"></img>
+<img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101016037-9925c080-35ab-11eb-9c13-2fbd8490fa93.png">
 </div>
 
 관리자 기능
