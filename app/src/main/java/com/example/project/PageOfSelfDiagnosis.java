@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.*;
 
 /**
- * 
+ * 자가진단 페이지
  */
 public class PageOfSelfDiagnosis extends Fragment {
 
