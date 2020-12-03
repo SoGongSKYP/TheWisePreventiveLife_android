@@ -3,7 +3,7 @@
 사용자 기능 및 UI 
 1. 인트로
 
-<img  src="![KakaoTalk_20201203_202717232](https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png)" width="40%">
+![KakaoTalk_20201203_202717232](https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png)
 
 2. 내 주변 확진자 검색
 3. 경로 위험도 측정 기능
