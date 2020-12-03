@@ -15,13 +15,10 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
 /**
- * 
+ * 선별 진료소 사용자 정의 class
  */
 public class SelectedClinic {
 
-    /**
-     * Default constructor
-     */
     public SelectedClinic( String name, Place place, String code, String phoneNum) {
         this.name =name;
         this.place=place;
@@ -83,7 +80,6 @@ public class SelectedClinic {
         return (dist);
     }
 
-
     // This function converts decimal degrees to radians
     private static double deg2rad(double deg) {
         return (deg * Math.PI / 180.0);
@@ -99,7 +95,7 @@ public class SelectedClinic {
         Node nValue=(Node)nlList.item(0);
         if(nValue==null) return null;
         return nValue.getNodeValue();
-    }
+    } //api 값 파싱시 사용할 함수
 
     public Place calXY(String name) throws IOException, ParserConfigurationException, SAXException {
         String parsingUrl="";
@@ -136,6 +132,5 @@ public class SelectedClinic {
             }
         }
         return searchLoc;
-    }
-
+    }// 주소를 이용 현재 경도와 위도를 가져오는 api 이용함수
 }
