@@ -4,7 +4,7 @@
 
 1. 인트로 및 GPS 위치 허용
 <div>
-<img width="189" alt="KakaoTalk_20201203_202717232_01" src="https://user-images.githubusercontent.com/57628980/101015840-54018e80-35ab-11eb-9968-8458b856d3c6.png">
+<img width="189" alt="KakaoTalk_20201203_202717232_01" src="https://user-images.githubusercontent.com/57628980/101017820-edca3b00-35ad-11eb-8cc5-db64e7ad1642.jpg">
 <img width="189" alt="KakaoTalk_20201203_202717232_01" src="https://user-images.githubusercontent.com/57628980/101017439-72688980-35ad-11eb-84ab-fa5786d1480d.jpg">
 </div>
 2. 내 주변 확진자 검색
@@ -34,7 +34,7 @@
 </div>
 
 
-관리자 기능
+8. 관리자 기능
 통계와 별개로 확진자 동선은 api로 직접 제공 되지 않음 
 따라서 관리자가 직접 관리해야하는 부분
 확진자 관리에 편의를 주기 위하여 기능을 추가
