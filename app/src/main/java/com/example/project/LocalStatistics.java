@@ -1,24 +1,7 @@
 package com.example.project;
 
 /**
- * xml 예시
- * <item>
- * <createDt>2020-11-21 09:44:25.227</createDt> //등록일시분초
- * <deathCnt>0</deathCnt>//사망자수
- * <defCnt>457</defCnt> //누적 확진자 수
- * <gubun>경남</gubun> // 시도명 한글
- * <gubunCn>庆南</gubunCn>
- * <gubunEn>Gyeongsangnam-do</gubunEn>
- * <incDec>11</incDec>//전일대비 증감수
- * <isolClearCnt>342</isolClearCnt>//격리해제수
- * <isolIngCnt>115</isolIngCnt> // 격리중 환자수
- * <localOccCnt>11</localOccCnt>//지역 발생 수
- * <overFlowCnt>0</overFlowCnt>//해외유입수
- * <qurRate>13.60</qurRate> //10만명당 발생률
- * <seq>5800</seq>
- * <stdDay>2020년 11월 21일 00시</stdDay>//기준일시
- * <updateDt>null</updateDt>
- * </item>
+ * 지역 통계를 저장할 사용자 정의 class
  */
 
 /* local 순서
