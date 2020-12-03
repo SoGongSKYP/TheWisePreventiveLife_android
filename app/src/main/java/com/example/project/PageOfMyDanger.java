@@ -51,24 +51,21 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
     Button findRouteButton;
     DialogOfSearch dialog;
     private Place startPlace, finishPlace;  // 검색한 결과 Place 객체
-    private ArrayList<Patient> patient;
+    private ArrayList<Patient> patient; // DB에서 받아온 확진자 받을 변수
     private ArrayList<VisitPlace> nearPlaces; // 경로 주변 확진자
     private ArrayList<Place> visitPlaceList; // 출력 결과 경로 경유지
-    private ArrayList<Place> routeList; // 입력받은 출발 도착
-    private int danger; // 위험도
+    private ArrayList<SearchPath> searchResultPath; // 경로 탐색 결과
 
-    private ArrayList<SearchPath> searchResultPath;
+    public GoogleMap mMap; // 맵 객체
 
-    public GoogleMap mMap;
+    private Marker userPoint; // 내 위치 마커
+    private ArrayList<Marker> visitPlacePoint; //경유지 마커 배열
+    private ArrayList<Marker> nearMaker; // 경유지 주변 확진자 마커 배열
 
-    private Marker userPoint;
-    private ArrayList<Marker> visitPlacePoint;
-    private ArrayList<Marker> nearMaker;
-
-    private LatLng myLatLng;
+    private LatLng myLatLng; // 내 위치 경도 위도 객체
     private MapView mapView;
-    private CalRoute cl;
-    private ResultCallbackListener listener;
+    private CalRoute cl; // 경로 탐색 수행하는 객체
+    private ResultCallbackListener listener; // 경로 탐색 리스너 객체
 
     /*RecyclerView 관련 함수*/
     private LinearLayout routeLayout;
@@ -90,8 +87,6 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
         this.nearPlaces =new ArrayList<VisitPlace>();
         this.searchResultPath = new ArrayList<SearchPath>();
         this.visitPlaceList = new ArrayList<Place>();
-        this.routeList =new ArrayList<Place>();
-        this.danger=0;
         this.startPlace = new Place(null,0,0);
         this.finishPlace= new Place(null,0,0);
         this.cl=new CalRoute(getContext(),null,null);
@@ -292,7 +287,7 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
         markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.myicon1));
         this.userPoint = this.mMap.addMarker(markerOptions);
         this.mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(this.myLatLng, 15));
-    }
+    } //GPS 위치가 업데이트 되었을때 내가 있는 장소를 리프레쉬 해줄 함수
 
     public void addVisitNearMarker() throws ParseException {
         calVisitPlace();
@@ -336,8 +331,7 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
             }// 현재로부터 7~14일 사이에 다녀간 장소
             this.nearMaker.add(this.mMap.addMarker(markerOptions));
         }// 근처 확진자 동선
-
-    }
+    } // 내가 방문한 장소와 확진자 동선들을 마커로 찍어주는 함수
 
     public void calVisitPlace() {
         this.visitPlaceList.clear();
@@ -350,7 +344,8 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
         }// 경로 상 모든 들리는 장소를 경유지 리스트에 넣어줌
         this.visitPlaceList.add(finishPlace);
         System.out.println(this.visitPlaceList.size());
-    }
+    } // 경로 탐색 결과에서 들리는 모든 장소를 경유지 리스트에 넣어주는 함수
+
     public void calNearPlace() {
         this.nearPlaces.clear();
         for (int a = 0; a < this.patient.size(); a++) {
@@ -365,7 +360,7 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
             }
         }
         calDanger();
-    }//반경 1km이내 확진자 동선
+    }//반경 1km이내 확진자 동선을 계산
 
     private class GPSListener implements LocationListener {
         public void onLocationChanged(Location location) {
@@ -383,7 +378,7 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
 
         public void onStatusChanged(String provider, int status, Bundle extras) {
         }
-    }
+    }//GPS가 업데이트 되면서 장소가 변경되었을때 실행되는 리스너 함수
 
     @Override
     public void onStart() {
@@ -446,5 +441,5 @@ public class PageOfMyDanger extends Fragment implements OnMapReadyCallback {
             greenImageView.setImageResource(R.drawable.circle_green);
             resultTextView.setText("검색하신 외출 동선의 위험도는 '안전' 입니다.");
         }
-    }
+    } // 근처 확진자 동선의 개수에 따라 위험도를 UI로 출력해주는 함수
 }
