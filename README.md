@@ -5,7 +5,7 @@
 1. 인트로
 <div>
 <img src="https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png
-" width="48">
+" width="50%">
 </div>
 2. 내 주변 확진자 검색
 
@@ -21,7 +21,7 @@
 6. 전국별 지역별 통계 기능 제공
 <div>
 <img src="https://user-images.githubusercontent.com/57628980/101014792-c4a7ab80-35a9-11eb-81e2-1369e2034487.png
-" width="48">
+" width="50%">
 </div>
 
 관리자 기능
