@@ -5,7 +5,7 @@
 1. 인트로
 <div>
 <img src="https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png
-" width="50%">
+" width="50%"></img>
 </div>
 2. 내 주변 확진자 검색
 
@@ -13,15 +13,15 @@
 
 4. 자가진단 기능
 <img src="https://user-images.githubusercontent.com/57628980/101014689-9a55ee00-35a9-11eb-87ad-8b470e218445.png
-" width="50%">
+" width="50%"></img>
 <img src="https://user-images.githubusercontent.com/57628980/101014693-9c1fb180-35a9-11eb-94f9-8368765ab2ec.png
-" width="50%">
+" width="50%"></img>
 
 5. 내 주변 제일 가까운 5개의 선별진료소 제공
 6. 전국별 지역별 통계 기능 제공
 <div>
 <img src="https://user-images.githubusercontent.com/57628980/101014792-c4a7ab80-35a9-11eb-81e2-1369e2034487.png
-" width="50%">
+" width="50%"></img>
 </div>
 
 관리자 기능
