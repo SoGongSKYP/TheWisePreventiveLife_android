@@ -5,16 +5,17 @@ import android.content.Context;
 import com.odsay.odsayandroidsdk.ODsayService;
 import java.util.ArrayList;
 
+/**
+ * 루트 계산을 하는 class
+ */
 public class CalRoute {
-    private Place startPlace;
-    private Place endPlace;
-    private ArrayList<SearchPath> searchResultPath;
+    private Place startPlace; // 출발지
+    private Place endPlace; // 도착지
     private Context thisContext;
-    private ResultCallbackListener resultCallbackListener;
+    private ResultCallbackListener resultCallbackListener;// 경로 탐색 api의 리스너 객체
     public CalRoute(Context context, final Place startPlace, final Place endPlace) throws InterruptedException {
         this.startPlace = startPlace;
         this.endPlace = endPlace;
-        this.searchResultPath = new ArrayList<SearchPath>();
         this.thisContext=context;
         this.resultCallbackListener  = new ResultCallbackListener();
         if(startPlace != null && endPlace!=null){
@@ -33,18 +34,15 @@ public class CalRoute {
             });
             thread.start();
         }
-    }
+    } // 경로 탐색 api 실행 함수
     public ResultCallbackListener calRoute1() throws InterruptedException {
         return resultCallbackListener;
-    }
+    } // 탐색 경로의 값은 리스너가 가지고 있으므로 리스터 반환 함수
 
     public Place getEndPlace() {
         return endPlace;
     }
     public Place getStartPlace() {
         return startPlace;
-    }
-    public ArrayList<SearchPath> getSearchResultPath() {
-        return searchResultPath;
     }
 }
