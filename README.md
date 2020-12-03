@@ -11,7 +11,9 @@
 <img width="189" alt="KakaoTalk_20201203_210203575" src="https://user-images.githubusercontent.com/57628980/101016223-cffbd680-35ab-11eb-9fb3-597da9c737f0.png">
 </div>
 3. 경로 위험도 측정 기능
-
+<div>
+<img width="189" alt="KakaoTalk_20201203_202717232_07" src="https://user-images.githubusercontent.com/57628980/101016317-f3268600-35ab-11eb-9141-696762c70550.png">
+</div>
 4. 자가진단 기능
 <div>
 <img width="189" alt="KakaoTalk_20201203_202717232_03" src="https://user-images.githubusercontent.com/57628980/101015960-7d221f00-35ab-11eb-8f8a-29a19ba806fd.png">
