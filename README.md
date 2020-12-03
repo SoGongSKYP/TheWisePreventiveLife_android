@@ -2,9 +2,9 @@
 
 사용자 기능 및 UI 
 1. 인트로
-<div>
+
 <img  src="![KakaoTalk_20201203_202717232](https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png)" width="40%">
-</div>
+
 2. 내 주변 확진자 검색
 3. 경로 위험도 측정 기능
 4. 자가진단 기능
