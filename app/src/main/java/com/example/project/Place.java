@@ -7,10 +7,10 @@ import java.io.Serializable;
  */
 public class Place implements Serializable {
 
-    private String placeAddress;
-    private String placeDetailAddress;
-    private double placeX;
-    private double placeY;
+    private String placeAddress; //장소에 대한 간단한 주소나 장소 이름
+    private String placeDetailAddress; // 장소에 대한 디테일한 주소
+    private double placeX;//경도
+    private double placeY;//위도
 
     //Constructor
     public Place(String place_address, double placeX, double placeY ) {

@@ -3,10 +3,15 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * 
+ * 전염병 감염 환자 사용자 정의형 class
  */
 public class Patient implements Serializable {
 
+    private int smallLocalNum; // 시군 단위 지역 번호
+    private int bigLocalNum; // 광역 자치단체(도, 광역시,특별시)
+    private String patientNum; // 환자 번호
+    private String confirmDate; // 확진 날짜
+    private ArrayList<VisitPlace> visitPlaceList;// 환자의 확진자 동선
 
     public Patient(int smallLocalNum, int bigLocalNum, String patientNum, String confirmDate, ArrayList<VisitPlace> visitPlaceList) {
         this.smallLocalNum = smallLocalNum;
@@ -56,10 +61,5 @@ public class Patient implements Serializable {
         this.visitPlaceList = visitPlaceList;
     }
 
-    private int smallLocalNum;
-    private int bigLocalNum;
-    private String patientNum;
-    private String confirmDate;
-    private ArrayList<VisitPlace> visitPlaceList;
 
 }

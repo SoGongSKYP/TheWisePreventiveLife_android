@@ -1,5 +1,7 @@
 package com.example.project;
 
+import android.widget.Toast;
+
 import com.odsay.odsayandroidsdk.API;
 import com.odsay.odsayandroidsdk.ODsayData;
 import com.odsay.odsayandroidsdk.OnResultCallbackListener;
@@ -10,8 +12,12 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
+/**
+ * 경로 검색을 수행하는 오딧세이 api의 결과를 콜백하는 비동기식 class
+ */
+
 public class ResultCallbackListener implements OnResultCallbackListener {
-    private ArrayList<SearchPath> ResultPath;
+    private ArrayList<SearchPath> ResultPath;// 경로 검색 결과
     public ResultCallbackListener(){
         this.ResultPath = new ArrayList<SearchPath>();
     }
@@ -92,18 +98,12 @@ public class ResultCallbackListener implements OnResultCallbackListener {
                                         ,path.getJSONObject("info").getInt("totalStationCount")
                                         ,path.getJSONObject("info").getInt("totalDistance")),temp));
                             }
-                        System.out.println("안쪽에서의 사이즈1:"+ ResultPath.size());
-                        //System.out.println("안쪽에서의 사이즈2:"+ ResultPath.size());
                     }
                 } catch(JSONException e){
                     e.printStackTrace();
                 }
-                System.out.println("드디어 끝났다");
-                System.out.println("중간쪽에서의 사이즈:"+ ResultPath.size());
-
-            }
+            }/*경로 검색 파싱*/
     @Override
     public void onError(int i, String s, API api) {
-
     }
 }
