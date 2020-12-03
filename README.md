@@ -13,7 +13,8 @@
 </div>
 3. 경로 위험도 측정 기능
 <div>
-<img width="189" alt="KakaoTalk_20201203_202717232_07" src="https://user-images.githubusercontent.com/57628980/101016317-f3268600-35ab-11eb-9141-696762c70550.png">
+<img width="189" alt="KakaoTalk_20201203_202717232_07" src="https://user-images.githubusercontent.com/57628980/101017874-04709200-35ae-11eb-929b-dcfa720a2d65.jpg">
+<img width="189" alt="KakaoTalk_20201203_202717232_07" src="https://user-images.githubusercontent.com/57628980/101017882-08041900-35ae-11eb-8b4d-10e289aeef6c.jpg">
 </div>
 4. 자가진단 기능
 <div>
