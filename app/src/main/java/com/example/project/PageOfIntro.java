@@ -14,7 +14,10 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 import static android.content.pm.PackageManager.PERMISSION_DENIED;
-
+/**
+ * 어플이 시작될 때 인트로 page
+ * 이때 DB와의 연결, api에서 값 받아오는 연산을 거칩니다.
+ */
 public class PageOfIntro extends AppCompatActivity {
 
     @Override
@@ -24,27 +27,32 @@ public class PageOfIntro extends AppCompatActivity {
 
         final Lock lock = new ReentrantLock(); // lock instance
 
-        Thread thread = new Thread(new APIEntity(lock));
+        Thread thread = new Thread(new APIEntity(lock)); // 전국 지역 통계 API불러오는 쓰레드
         thread.start();
+
         Thread threadArray[] = new Thread[21];
+        /**
+         * 선별진료소가 api에 저장된 것만 총 1024개이므로 50개씩 나누어서 총 21개 쓰레드를 멀티 쓰레딩 방식으로
+         * 구현하여 속도 개선 및 과부화 해결
+         */
         for(int i =0; i < 21;i++){
             threadArray[i]=new Thread(new clinicAPIEntity(i+1));
             threadArray[i].start();
         }
+
 
         new Thread(new Runnable() {
             @Override
             public void run() {
                 DBEntity.connectAppDB();
             }
-        }).start();
+        }).start();// 환자 정보를 DB에서 받아올 DB 쓰레드
         new Thread(new Runnable() {
             @Override
             public void run() {
                 DBEntity.connectMovingDB();
             }
-        }).start();
-
+        }).start(); // 환자 동선 정보를 DB에서 받아올 쓰레드
 
         this.LocPermission(this,getApplicationContext());
         new android.os.Handler().postDelayed(
@@ -56,7 +64,7 @@ public class PageOfIntro extends AppCompatActivity {
                     }
                 }
                 , 6000);
-    }
+    } 
     private final int MY_PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 200;
     public void LocPermission(Activity activity , Context context) {
         if (ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) == PERMISSION_DENIED ) {
