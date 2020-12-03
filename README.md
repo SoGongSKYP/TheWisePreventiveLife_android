@@ -2,9 +2,10 @@
 
 사용자 기능 및 UI 
 
-1. 인트로
+1. 인트로 및 GPS 위치 허용
 <div>
 <img width="189" alt="KakaoTalk_20201203_202717232_01" src="https://user-images.githubusercontent.com/57628980/101015840-54018e80-35ab-11eb-9968-8458b856d3c6.png">
+![KakaoTalk_20201203_211939626_01](https://user-images.githubusercontent.com/57628980/101017439-72688980-35ad-11eb-84ab-fa5786d1480d.jpg)
 </div>
 2. 내 주변 확진자 검색
 <div>
