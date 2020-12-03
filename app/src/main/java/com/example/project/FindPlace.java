@@ -17,9 +17,13 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
+/**
+ * 주소로 장소를 찾아주는 기능을 가진 class
+ * 사용 api:https://www.vworld.kr/dev/v4dv_search2_s001.do
+ */
 public class FindPlace {
-    private String placeName;
-    private ArrayList<Place> searchLocList;
+    private String placeName; //장소 이름
+    private ArrayList<Place> searchLocList; // 검색 결과 리스트
 
     public FindPlace(String placeName) {
         this.placeName = placeName;
@@ -31,9 +35,9 @@ public class FindPlace {
         Node nValue = (Node) nlList.item(0);
         if (nValue == null) return null;
         return nValue.getNodeValue();
-    }
+    } // 태그 밸류 읽는 함수
 
-    public void searchPlace() {
+    public void searchPlace() { // 장소 검색 통신 및 받아온 결과 파싱 함수
         String parsingUrl = "";
         String key = "340FCCC5-C1C9-31D4-B7D8-56BC7558298A";
         StringBuilder urlBuilder = new StringBuilder("http://api.vworld.kr/req/search?"); /*URL*/
@@ -49,7 +53,6 @@ public class FindPlace {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-
 
         URL url = null;
         try {
