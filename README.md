@@ -2,14 +2,23 @@
 
 사용자 기능 및 UI 
 1. 인트로
-
-![KakaoTalk_20201203_202717232](https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png)
-
+<div>
+<img src="![KakaoTalk_20201203_202717232](https://user-images.githubusercontent.com/57628980/101013911-5d3d2c00-35a8-11eb-9adc-890f5e049dd8.png)
+" width="48">
+</div>
 2. 내 주변 확진자 검색
 3. 경로 위험도 측정 기능
 4. 자가진단 기능
+<img src="![KakaoTalk_20201203_202717232_03](https://user-images.githubusercontent.com/57628980/101014689-9a55ee00-35a9-11eb-87ad-8b470e218445.png)
+" width="48">
+<img src="![KakaoTalk_20201203_202717232_04](https://user-images.githubusercontent.com/57628980/101014693-9c1fb180-35a9-11eb-94f9-8368765ab2ec.png)
+" width="48">
 5. 내 주변 제일 가까운 5개의 선별진료소 제공
 6. 전국별 지역별 통계 기능 제공
+<div>
+<img src="![KakaoTalk_20201203_202717232_05](https://user-images.githubusercontent.com/57628980/101014792-c4a7ab80-35a9-11eb-81e2-1369e2034487.png)
+" width="48">
+</div>
 
 관리자 기능
 통계와 별개로 확진자 동선은 api로 직접 제공 되지 않음 
