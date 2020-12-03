@@ -55,6 +55,7 @@ public class PageOfStatistics extends Fragment {
             }
         }
     }
+    /*지역별통계를 원형차트로 보여주는 함수*/
     public void dataView(PieChart pieC, ArrayList<PieEntry> value,int localNum){
         value.removeAll(value);
         pieC.setUsePercentValues(true);
@@ -66,7 +67,7 @@ public class PageOfStatistics extends Fragment {
         pieC.setDrawHoleEnabled(false);
         pieC.setHoleColor(Color.BLACK);
         pieC.setTransparentCircleRadius(65f);
-        //누적확진비율
+        //누적확진비율(각 지역이 전체중에 몇퍼센트를 차지하는지 보여줌)
         value.add(new PieEntry(nationStatistic.getLocalStatistics().get(localNum).getAccumulatePatient(), nationStatistic.getLocalStatistics().get(localNum).getLocalName()));
         value.add(new PieEntry(nationStatistic.getPatientNum()-nationStatistic.getLocalStatistics().get(localNum).getAccumulatePatient(),"그 외 지역"));
 
@@ -86,7 +87,7 @@ public class PageOfStatistics extends Fragment {
         PieData data = new PieData((dataSet));
         data.setValueTextSize(15f);
         data.setValueTextColor(Color.BLACK);
-
+        //원형차트 데이터 값 넣어주기
         pieChart.setData(data);
     }
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState){
@@ -126,6 +127,7 @@ public class PageOfStatistics extends Fragment {
         local4TextView = v.findViewById(R.id.user_statistics_4_TextView);
         localTitleTextView = v.findViewById(R.id.local_title_TextView);
 
+        //전국통계 데이터 값 설정
         nation1TextView.setText(this.nationStatistic.getPatientNum()+"명");
         nation2TextView.setText(this.nationStatistic.getCareNum()+"명");
         nation3TextView.setText(this.nationStatistic.getHealerNum()+"명");
@@ -213,6 +215,7 @@ public class PageOfStatistics extends Fragment {
         System.out.println("사망자: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getDeadNum());
         System.out.println("10만명당 확진률: "+this.nationStatistic.getLocalStatistics().get(this.localNum).getAccumulatePatient()+"%");
     }
+    //지역통계 데이터 
     public void setnum(int localNum){
         local1TextView.setText(this.nationStatistic.getLocalStatistics().get(localNum).getAccumulatePatient()+"명");
         local2TextView.setText(this.nationStatistic.getLocalStatistics().get(localNum).getHealerNum()+"명");
