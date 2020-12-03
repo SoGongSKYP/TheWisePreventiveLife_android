@@ -20,10 +20,55 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-public class APIEntity implements Runnable{
-    private static ArrayList<LocalStatistics> localList;
-    private static NationStatistics nation;
-    private final Lock lock;
+/**
+ * 통계 API와 통신하는 class
+ * 전국 통계 XML 파싱 내역
+ * 사용 api: https://www.data.go.kr/data/15043376/openapi.do
+ *  * <item>
+ *  * <accDefRate>1.0684961451</accDefRate> //누적 확진률
+ *  * <accExamCnt>2896746</accExamCnt> //누적 검사수
+ *  * <accExamCompCnt>2845401</accExamCompCnt> // 누적 검사 완료
+ *  * <careCnt>3535</careCnt> //치료중 환자수
+ *  * <clearCnt>26365</clearCnt>//격리해제 수
+ *  * <createDt>2020-11-21 09:35:35.158</createDt> //등록 일시분초
+ *  * <deathCnt>503</deathCnt>//사망자수
+ *  * <decideCnt>30403</decideCnt>//확진자수
+ *  * <examCnt>51345</examCnt>//검사 진행수
+ *  * <resutlNegCnt>2814998</resutlNegCnt>//결과 음성수
+ *  * <seq>329</seq>
+ *  * <stateDt>20201121</stateDt> // 기준 일
+ *  * <stateTime>00:00</stateTime>//기준 시간
+ *  * <updateDt>null</updateDt>
+ *  * </item>
+ *
+ *  지역 통계 XML 파싱 내역
+ *  사용 api:https://www.data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15043378
+ *   * xml 예시
+ *  * <item>
+ *  * <createDt>2020-11-21 09:44:25.227</createDt> //등록일시분초
+ *  * <deathCnt>0</deathCnt>//사망자수
+ *  * <defCnt>457</defCnt> //누적 확진자 수
+ *  * <gubun>경남</gubun> // 시도명 한글
+ *  * <gubunCn>庆南</gubunCn>
+ *  * <gubunEn>Gyeongsangnam-do</gubunEn>
+ *  * <incDec>11</incDec>//전일대비 증감수
+ *  * <isolClearCnt>342</isolClearCnt>//격리해제수
+ *  * <isolIngCnt>115</isolIngCnt> // 격리중 환자수
+ *  * <localOccCnt>11</localOccCnt>//지역 발생 수
+ *  * <overFlowCnt>0</overFlowCnt>//해외유입수
+ *  * <qurRate>13.60</qurRate> //10만명당 발생률
+ *  * <seq>5800</seq>
+ *  * <stdDay>2020년 11월 21일 00시</stdDay>//기준일시
+ *  * <updateDt>null</updateDt>
+ *  * </item>
+ */
+public class APIEntity implements Runnable{ // Runnable을 상속받아 스레드안에서 실행되게 함
+
+    private static ArrayList<LocalStatistics> localList; //지역 통계 리스트 객체
+    private static NationStatistics nation; // 전국 통계 객체
+    private final Lock lock; // 동기화 위한 lock 객체
+
+    // 날짜 수정 위한 객체들
     private SimpleDateFormat mFormat;
     private Date currentDate;
     private Date yeDay;
@@ -69,7 +114,7 @@ public class APIEntity implements Runnable{
             lock.unlock();
         }
     }
-    //전국통계 API
+
     public NationStatistics nationAPI(ArrayList<LocalStatistics> localList) throws IOException, ParserConfigurationException, SAXException, ParseException {
         NationStatistics nation =null;
         String parsingUrl="";
@@ -92,7 +137,8 @@ public class APIEntity implements Runnable{
         doc.getDocumentElement().normalize();
 
         NodeList nList=doc.getElementsByTagName("item");
-        if(nList.getLength()==0){
+
+        if(nList.getLength()==0){ // 만약 결과값이 없다면 어제의 통계를 불러오는 분기 구문
             urlBuilder = new StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19InfStateJson"); /*URL*/
             urlBuilder.append("?" + URLEncoder.encode("ServiceKey","UTF-8") + "=0eMMHHcbnpAK1eXmexxzB4pMr9lfDCq4Tl6P4wh2DrYWPkvQfiB0u9Vr5mMh39H6x63xk%2FesCnLgUfMbHBQV8g%3D%3D"); /*Service Key*/
             urlBuilder.append("&" + URLEncoder.encode("ServiceKey","UTF-8") + "=" + URLEncoder.encode("-", "UTF-8")); /*공공데이터포털에서 받은 인증키*/
@@ -112,6 +158,7 @@ public class APIEntity implements Runnable{
             doc.getDocumentElement().normalize();
             nList=doc.getElementsByTagName("item");
         }
+
         for(int i=0; i<nList.getLength(); i++) {
             Node nNode=nList.item(i);
             if(nNode.getNodeType()==Node.ELEMENT_NODE) {
@@ -130,10 +177,9 @@ public class APIEntity implements Runnable{
                         , Integer.parseInt(getTagValue("accExamCompCnt",eElement)), Double.parseDouble(getTagValue("accDefRate",eElement)));
             }
         }
-        //전국통계 객체 
+        //전국통계 객체 생성
         return nation;
-    }
-    //지역통계 API파싱
+    } // 전국 통계 파싱
     public  ArrayList<LocalStatistics> localAPI() throws IOException, ParserConfigurationException, SAXException, ParseException {
         ArrayList<LocalStatistics> localList = new ArrayList<LocalStatistics>();
         String parsingUrl="";
@@ -158,7 +204,7 @@ public class APIEntity implements Runnable{
 
         NodeList nList=doc.getElementsByTagName("item");
 
-        if(nList.getLength()==0){
+        if(nList.getLength()==0){// 만약 결과값이 없다면 어제의 통계를 불러오는 분기 구문
             urlBuilder = new StringBuilder("http://openapi.data.go.kr/openapi/service/rest/Covid19/getCovid19SidoInfStateJson"); /*URL*/
             urlBuilder.append("?" + URLEncoder.encode("ServiceKey","UTF-8") + "=0eMMHHcbnpAK1eXmexxzB4pMr9lfDCq4Tl6P4wh2DrYWPkvQfiB0u9Vr5mMh39H6x63xk%2FesCnLgUfMbHBQV8g%3D%3D"); /*Service Key*/
             urlBuilder.append("&" + URLEncoder.encode("ServiceKey","UTF-8") + "=" + URLEncoder.encode("-", "UTF-8")); /*공공데이터포털에서 받은 인증키*/
@@ -201,14 +247,12 @@ public class APIEntity implements Runnable{
 
             }
         }
-        //지역통계 객체 리스트 반환
         return localList;
-    }
-    //API에서 태그가 가진 값 받아오기
+    }// 지역 통계 파싱
     private static String getTagValue(String tag, Element eElement) {
         NodeList nlList=eElement.getElementsByTagName(tag).item(0).getChildNodes();
         Node nValue=(Node)nlList.item(0);
         if(nValue==null) return null;
         return nValue.getNodeValue();
-    }
+    }// 태그 밸류 얻어오는 함수
 }
