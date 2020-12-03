@@ -27,6 +27,12 @@
 <img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101016037-9925c080-35ab-11eb-9c13-2fbd8490fa93.png">
 </div>
 
+7. 사용자가 임의로 위치 변경
+<div>
+<img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101017498-82806900-35ad-11eb-8a5b-0f0bd8ed8531.jpg">
+<img width="189" alt="KakaoTalk_20201203_202717232_05" src="https://user-images.githubusercontent.com/57628980/101017532-8ad8a400-35ad-11eb-8fff-fce0caf479b6.jpg">
+</div>
+
 
 관리자 기능
 통계와 별개로 확진자 동선은 api로 직접 제공 되지 않음 
